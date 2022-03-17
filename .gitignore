@@ -4,6 +4,7 @@
 !composer.json
 !composer.lock
 !.nginx.conf
+!flarum
 !.gitignore
 
 !storage

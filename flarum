@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+/*
+ * This file is part of Flarum.
+ *
+ * For detailed copyright and license information, please view the
+ * LICENSE file that was distributed with this source code.
+ */
+
+$site = require 'site.php';
+
+/*
+|-------------------------------------------------------------------------------
+| Interpret console arguments
+|-------------------------------------------------------------------------------
+|
+| Flarum's console interprets all command-line arguments to select and then
+| execute corresponding commands for certain administrative tasks.
+|
+*/
+
+$server = new Flarum\Console\Server($site);
+$server->listen();
