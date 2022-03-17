@@ -1,0 +1,67 @@
+{
+    "name": "fof/upload",
+    "description": "The file upload extension for the Flarum forum with insane intelligence.",
+    "keywords": [
+        "upload",
+        "flarum",
+        "file"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniël Klabbers",
+            "email": "daniel@klabbers.email",
+            "homepage": "https://luceos.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/FriendsOfFlarum/upload/issues",
+        "source": "https://github.com/FriendsOfFlarum/upload",
+        "forum": "https://discuss.flarum.org/d/4154"
+    },
+    "homepage": "https://friendsofflarum.org",
+    "funding": [
+        {
+            "type": "website",
+            "url": "https://opencollective.com/fof/donate"
+        }
+    ],
+    "require": {
+        "flarum/core": "^1.2.0",
+        "ramsey/uuid": "^3.5.2 || ^4",
+        "softcreatr/php-mime-detector": "^3.0",
+        "guzzlehttp/guzzle": "^6.0 || ^7.0",
+        "ext-json": "*"
+    },
+    "replace": {
+        "flagrow/upload": "*"
+    },
+    "suggest": {
+        "league/flysystem-aws-s3-v3": "Uploads to AWS S3 using API version 3.",
+        "overtrue/flysystem-qiniu": "Uploads to QiNiu using API."
+    },
+    "require-dev": {
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "overtrue/flysystem-qiniu": "1.0.4"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "FoF Upload",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-file-upload",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/4154"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "FoF\\Upload\\": "src/"
+        }
+    }
+}

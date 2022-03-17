@@ -1,0 +1,70 @@
+{
+    "name": "fof/byobu",
+    "description": "Well integrated, advanced private discussions.",
+    "keywords": [
+        "pm",
+        "flarum",
+        "fof",
+        "messaging",
+        "private discussions"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniël Klabbers",
+            "email": "daniel@blomstra.net"
+        },
+        {
+            "name": "IanM",
+            "email": "ian@blomstra.net",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/FriendsOfFlarum/byobu/issues",
+        "source": "https://github.com/FriendsOfFlarum/byobu",
+        "forum": "https://discuss.flarum.org/d/4762"
+    },
+    "homepage": "https://friendsofflarum.org",
+    "funding": [
+        {
+            "type": "website",
+            "url": "https://opencollective.com/fof/donate"
+        }
+    ],
+    "require": {
+        "flarum/core": "^1.2.0"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "FoF Byōbu",
+            "category": "feature",
+            "icon": {
+                "image": "resources/logo.svg",
+                "backgroundColor": "#e74c3c",
+                "backgroundSize": "90%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundPosition": "center"
+            },
+            "optional-dependencies": [
+                "flarum/suspend",
+                "flarum/flags",
+                "flarum/tags",
+                "flarum/approval",
+                "v17development/flarum-support"
+              ]
+        },
+        "extiverse": {
+            "discuss": "https://discuss.flarum.org/d/4762"
+        }
+    },
+    "replace": {
+        "flagrow/byobu": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FoF\\Byobu\\": "src/"
+        }
+    }
+}

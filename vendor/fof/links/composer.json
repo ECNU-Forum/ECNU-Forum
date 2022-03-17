@@ -1,0 +1,53 @@
+{
+  "name": "fof/links",
+  "description": "Manage Flarum primary navbar menu links",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/FriendsOfFlarum/links/issues",
+    "source": "https://github.com/FriendsOfFlarum/links",
+    "forum": "https://discuss.flarum.org/d/18335"
+  },
+  "homepage": "https://friendsofflarum.org",
+  "funding": [
+    {
+      "type": "website",
+      "url": "https://opencollective.com/fof/donate"
+    }
+  ],
+  "require": {
+    "flarum/core": "^1.0.0" 
+  },
+  "authors": [
+    {
+      "name": "David Sevilla Martín",
+      "email": "me+fof@datitisev.me",
+      "role": "Developer"
+    }
+  ],
+  "replace": {
+    "sijad/flarum-ext-links": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "FoF\\Links\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "FoF Links",
+      "category": "feature",
+      "icon": {
+        "name": "fas fa-bars",
+        "backgroundColor": "#e74c3c",
+        "color": "#fff"
+      }
+    },
+    "flagrow": {
+      "discuss": "https://discuss.flarum.org/d/18335"
+    }
+  }
+}

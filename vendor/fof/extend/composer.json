@@ -1,0 +1,21 @@
+{
+    "name": "fof/extend",
+    "description": "Configurable PHP components for your Flarum extension",
+    "type": "library",
+    "require": {
+        "flarum/core": "^1.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Sevilla Martin",
+            "email": "me+fof@datitisev.me",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FoF\\Extend\\": "src/"
+        }
+    }
+}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ff01d4586de75ac7d365725dea39c4c",
+    "content-hash": "155af3523ad42062b62515126bd65f27",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -4775,6 +4775,68 @@
                 }
             ],
             "time": "2021-10-06T17:43:30+00:00"
+        },
+        {
+            "name": "ianm/html-head",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imorland/html-head.git",
+                "reference": "b6fc869096bc9bef004e0e4a19cef3c4dc660157"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imorland/html-head/zipball/b6fc869096bc9bef004e0e4a19cef3c4dc660157",
+                "reference": "b6fc869096bc9bef004e0e4a19cef3c4dc660157",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "HTML Head Items",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-heading",
+                        "backgroundColor": "#0072e3",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/25907"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "IanM\\HtmlHead\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "IanM",
+                    "homepage": "https://discuss.flarum.org/u/ianm"
+                }
+            ],
+            "description": "Add custom items to the HTML <head> attributes",
+            "keywords": [
+                "custom",
+                "flarum",
+                "head",
+                "headers",
+                "html"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/25907",
+                "issues": "https://github.com/imorland/html-head/issues",
+                "source": "https://github.com/imorland/html-head"
+            },
+            "time": "2022-01-25T10:17:42+00:00"
         },
         {
             "name": "illuminate/bus",

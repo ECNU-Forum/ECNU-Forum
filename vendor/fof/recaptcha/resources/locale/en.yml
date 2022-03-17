@@ -1,0 +1,16 @@
+fof-recaptcha:
+  admin:
+    settings:
+      help_text: Obtain your Google reCAPTCHA credentials <a>here</a>.
+      secret_key_label: Secret Key
+      site_key_label: Site Key
+      type_label: reCAPTCHA Type
+    permissions:
+      post_without_captcha: Create posts and discussions without captcha
+  forum:
+    # This text is shown on the javascript error callback for reCAPTCHA.
+    # This is a generic error handler and we don't have access to the reason, so the message has to be vague.
+    error: There was an error submitting reCAPTCHA. Try again.
+
+validation:
+  recaptcha: reCAPTCHA validation failed.

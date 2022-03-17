@@ -1,0 +1,46 @@
+.RecipientLabel {
+    font-size: 85%;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    border-radius: @border-radius;
+    background: @body-bg;
+    color: @control-color;
+    text-transform: none;
+    border: 1px solid @primary-color;
+
+    &.none {
+        background: transparent;
+        border: 1px dotted @muted-color;
+        color: @muted-color;
+    }
+
+    .DiscussionHero .RecipientsLabel & {
+        font-size: 14px;
+    }
+}
+
+.RecipientsLabel {
+    .RecipientLabel {
+        background: transparent;
+        border-radius: 0;
+
+        &:first-of-type {
+            border-radius: @border-radius 0 0 @border-radius;
+        }
+        &:last-of-type {
+            border-radius: 0 @border-radius @border-radius 0;
+        }
+        &:first-of-type:last-of-type {
+            border-radius: @border-radius;
+        }
+
+        // Merge borders together without removing them.
+        //
+        // Fully removing a border could result in a missing border if the list of
+        // recipients spans multiple lines.
+        &:not(:first-of-type) {
+            margin-left: -1px;
+        }
+    }
+}

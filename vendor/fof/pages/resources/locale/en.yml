@@ -1,0 +1,38 @@
+fof-pages:
+  admin:
+    edit_page:
+      content_label: => fof-pages.ref.content
+      content_placeholder: => fof-pages.ref.content
+      delete_page_button: Delete page
+      delete_page_confirmation: "Are you sure you want to delete this page?"
+      hidden_label: Save as draft
+      restricted_label: Restrict access (configure who can access in the Permissions tab)
+      html_label: Enable HTML
+      set_as_home_page_confirmation: "Are you sure you want to set this page as your home page?"
+      set_as_home_page_done: Home page updated
+      slug_label: => fof-pages.ref.slug
+      slug_placeholder: => fof-pages.ref.slug
+      submit_button: => core.ref.save_changes
+      title: => fof-pages.ref.create_page
+      title_label: => fof-pages.ref.title
+      title_placeholder: => fof-pages.ref.title
+      url_label: => fof-pages.ref.url
+      url_placeholder: => fof-pages.ref.url
+    pages:
+      create_button: => fof-pages.ref.create_page
+    pages_list:
+      empty_text: It looks like there are no pages here.
+      title: => fof-pages.ref.title
+    permissions:
+      restricted: View restricted pages
+    badges:
+      hidden: Draft
+      restricted: Restricted
+
+  ref:
+    content: Content
+    create_page: Create page
+    pages: Pages
+    slug: Slug
+    title: Title
+    url: URL

@@ -1,0 +1,58 @@
+{
+    "name": "fof/pages",
+    "description": "Create custom pages with Flarum",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2",
+        "ext-json": "*"
+    },
+    "support": {
+        "issues": "https://github.com/FriendsOfFlarum/pages/issues",
+        "source": "https://github.com/FriendsOfFlarum/pages",
+        "forum": "https://discuss.flarum.org/d/18301"
+    },
+    "homepage": "https://friendsofflarum.org",
+    "funding": [
+        {
+            "type": "website",
+            "url": "https://opencollective.com/fof/donate"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Sajjad Hashemian",
+            "email": "wolaws@gmail.com"
+        },
+        {
+            "name": "David Sevilla Martín",
+            "email": "david.s@redevs.org",
+            "role": "Developer"
+        }
+    ],
+    "replace": {
+        "sijad/flarum-ext-pages": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FoF\\Pages\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "FoF Pages",
+            "category": "feature",
+            "icon": {
+                "name": "far fa-file-alt",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/18301"
+        }
+    }
+}

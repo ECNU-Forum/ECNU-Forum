@@ -1,0 +1,98 @@
+.SettingsPage--reactions {
+    padding: 20px 0;
+
+    legend {
+        margin-top: 25px;
+    }
+
+    @media @desktop-up {
+        .container {
+            max-width: 600px;
+            margin: 0;
+        }
+
+        fieldset {
+            margin-bottom: 30px;
+
+            > ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    strong {
+        font-size: 110%;
+    }
+
+    .Reactions-warning {
+        color: red;
+    }
+
+    .reactions-settings-input {
+        margin-bottom: 10px;
+    }
+
+    fieldset {
+        margin-top: 20px;
+    }
+
+    .Reactions--item {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        margin: 5px 0;
+    }
+
+    .Reactions-input {
+        flex-grow: 1;
+        margin-right: 5px;
+
+        &::placeholder {
+            font-style: italic;
+        }
+    }
+
+    .Reactions-type, .Reactions-demo {
+        flex-shrink: 0;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        vertical-align: top;
+        white-space: nowrap;
+        font-size: 30px;
+
+        i ~ img {
+            margin-left: 5px;
+        }
+
+        img {
+            display: inline-block;
+        }
+    }
+
+    .Reactions-save {
+        margin-top: 15px;
+    }
+
+    .Reactions-switch {
+        flex-basis: 50px;
+        max-width: 50px;
+        vertical-align: center;
+        margin-top: 12px;
+        padding-left: 90px;
+    }
+
+    .Select + .Reactions-button {
+        margin-left: 20px;
+    }
+
+    .Reactions-button {
+        margin: 5px 10px 5px 0;
+        padding-left: 15px;
+        padding-right: 9px;
+        vertical-align: middle;
+    }
+}

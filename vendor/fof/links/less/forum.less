@@ -1,0 +1,81 @@
+.LinkDropdown {
+  &.open > .LinksButton,
+  &:hover > button {
+    color: @header-control-color !important;
+
+    & when (@config-colored-header = false) {
+      color: var(--button-color, @primary-color) !important;
+    }
+  }
+}
+
+.LinkDropdown ul {
+  li {
+    .Dropdown-separator {
+      display: block !important;
+    }
+
+    &:first-child + li .Dropdown-separator:first-of-type {
+      display: none !important;
+    }
+  }
+
+  .LinksButton {
+    color: var(--button-color, @control-color) !important;
+
+    &--label {
+      color: @heading-color !important;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: @control-bg !important;
+    }
+  }
+}
+
+.LinksButton {
+  &--label {
+    cursor: unset !important;
+    .user-select(unset);
+    color: @header-control-color !important;
+
+    .LinkDropdown > & {
+      cursor: pointer !important;
+    }
+  }
+
+  &:not(.LinksButton--label) {
+    &.active {
+      font-weight: 600;
+    }
+
+    // This prevents the links from changing width when they become bold
+    // by having an invisible copy of the text already in bold
+    // based on https://stackoverflow.com/a/20249560/3133038
+    &::after {
+      display: block;
+      content: attr(title);
+      font-weight: bold;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
+
+  + .Dropdown-toggle {
+    width: auto;
+    margin-right: 10px;
+  }
+}
+
+@media @phone {
+  .SplitDropdown-button {
+    width: calc(100% - 8.75px) !important;
+  }
+}
+
+.LinkDropdown .Dropdown-menu > li > a .Button-icon {
+  margin-left: 0;
+}

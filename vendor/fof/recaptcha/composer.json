@@ -1,0 +1,61 @@
+{
+  "name": "fof/recaptcha",
+  "description": "Increase your forum's security with Google reCAPTCHA",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/FriendsOfFlarum/recaptcha/issues",
+    "source": "https://github.com/FriendsOfFlarum/recaptcha",
+    "forum": "https://discuss.flarum.org/d/18399"
+  },
+  "homepage": "https://friendsofflarum.org/",
+  "funding": [
+    {
+      "type": "website",
+      "url": "https://opencollective.com/fof/donate"
+    }
+  ],
+  "require": {
+    "flarum/core": "^1.0.0",
+    "google/recaptcha": "^1.2"
+  },
+  "authors": [
+    {
+      "name": "Sajjad Hashemian",
+      "email": "wolaws@gmail.com"
+    },
+    {
+      "name": "David Sevilla Martín",
+      "email": "david.s@redevs.org",
+      "role": "Developer"
+    }
+  ],
+  "replace": {
+    "sijad/flarum-ext-recaptcha": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "FoF\\ReCaptcha\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "FoF reCAPTCHA",
+      "category": "feature",
+      "icon": {
+        "name": "fas fa-robot",
+        "backgroundColor": "#e74c3c",
+        "color": "#fff"
+      },
+      "optional-dependencies": [
+        "fof/oauth"
+      ]
+    },
+    "flagrow": {
+      "discuss": "https://discuss.flarum.org/d/18399"
+    }
+  }
+}

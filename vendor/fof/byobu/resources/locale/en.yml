@@ -1,0 +1,138 @@
+fof-byobu:
+    forum:
+        badges:
+            is_private:
+                tooltip: Private discussion
+
+        buttons:
+            add_recipients: Recipients
+            submit: OK
+            edit_recipients: Edit Recipients
+            send_pd: "Send {username} a message"
+            cancel: Cancel
+            make_public: Make this discussion public
+            remove_from_discussion: Leave this private discussion
+
+        composer_private_discussion:
+            submit_button: Post Private Discussion
+            title_placeholder: Private Discussion Title
+
+        confirm:
+            make_public: Are you sure you want to remove the recipients and make this discussion visible to anyone who can view the assigned tag?
+
+        labels:
+            recipients: "{count, plural, one {{count} Recipient} other {{count} Recipients}}"
+
+        nav:
+            start_button: Discuss Privately
+            nav_item: "Private Discussions"
+
+        input:
+            search_recipients: Search recipient by typing first three characters...
+
+        search:
+            headings:
+                groups: Permission Groups
+
+        modal:
+            titles:
+                update_recipients: Update recipients of {title}
+                add_recipients: Add recipients to your discussion
+
+            labels:
+                selected_users: Selected users
+                search_field: Search for user
+
+            help:
+                add_recipients: This discussion will only be visible to the users you choose here. At least 1 recipient (other than yourself) is required.
+                update_recipients: This discussion will only be visible to the users you choose here.
+                selected_users: Click a user's name to remove them.
+                click_user_to_remove_tooltip: Click to remove
+
+        post:
+            recipients_modified:
+                added_and_removed: "{username} added recipients {added} and removed {removed}."
+                added: "{username} added recipients {added}."
+                made_public: "{username} removed all recipients and made the discussion public"
+                removed: "{username} removed recipients {removed}."
+                removed_self: "{username} left the private discussion."
+
+        user:
+            settings:
+                block_pd: Block private discussions
+            byobu_link: Private Discussions
+            dropdown_label: Private Discussions
+
+        notifications:
+            pd_label: Someone includes me in a new private discussion
+            pd_reply_label: Someone posts in a private discussion I'm a recipient of
+            pd_reply_text: "{username} posted in a private discussion you're a part of"
+            pd_text: "{username} started a new private discussion with you"
+            pd_user_left_label: A recipient user leaves a private discussion I'm a part of
+            pd_user_left_text: "{username} left the private discussion"
+            pd_added_text: "{username} added you to a private discussion"
+            pd_added_label: "Someone adds me to an existing private discussion"
+
+    admin:
+        permission:
+            create_private_discussions_with_users: Create private discussions with users
+            create_private_discussions_with_groups: Create private discussions with groups
+            create_private_discussions_with_blocking_users: Create private discussions with users that block it
+            edit_user_recipients: Edit users partaking in private discussions
+            edit_group_recipients: Edit groups partaking in private discussions
+            make_private_into_public: Transform a private discussion into a public discussion
+            view_private_discussions-when-flagged: View private discussions of other users if flagged
+
+        settings:
+            badge-icon: Byobu Discussion Badge
+            enable-make-public-option: Enable the "make public" ability
+            enable-make-public-option-help: Adds the ability for those with permission to remove all recipients, assign a new tag and make the discussion publically visible (accoring to the visibility settings of the chosen tag).
+            post-event-icon: Byobu Post Events
+
+    email:
+        subject:
+            private_discussion_created: "[Private Discussion] {display_name} started a new private discussion with you"
+            private_discussion_replied: "[Private Discussion] {display_name} posted in a private discussion"
+            recipient_removed: "[Private Discussion] {display_name} left the discussion"
+            private_discussion_added: "[Private Discussion] {display_name} added you to a private discussion"
+
+        body:
+            private_discussion_created: |
+                Hey {recipient_display_name},
+
+                {actor_display_name} started a new private discussion with you as a recipient: {discussion_title}.
+
+                View it here:
+                {discussion_url}
+
+                You may need to login first before being able to access this link.
+
+            private_discussion_replied: |
+                Hey {recipient_display_name},
+
+                {actor_display_name} posted in a private discussion with you as a recipient: {discussion_title}.
+
+                View it here:
+                {post_url}
+
+                You may need to login first before being able to access this link.
+
+            recipient_removed: |
+                Hey {recipient_display_name},
+
+                {actor_display_name} left the private discussion: {discussion_title}. They'll no longer be able to view any of it's content.
+
+                View it here:
+                {discussion_url}
+
+                You may need to login first before being able to access this link.
+
+            private_discussion_added: |
+                Hey {recipient_display_name},
+
+                {actor_display_name} added you to an existing private discussion: {discussion_title}.
+
+                View it here:
+                {discussion_url}
+
+                You may need to login first before being able to access this link.

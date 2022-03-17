@@ -1,0 +1,38 @@
+.UserCard-info {
+    .item-bio {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+.UserBio {
+    margin: -10px -10px 10px;
+    border: 1px dashed transparent;
+    border-radius: @border-radius;
+
+    &.editable:not(.editing) {
+        cursor: text;
+
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &, textarea {
+        font-size: 14px;
+    }
+
+    textarea {
+        padding: 10px;
+        font-size: 14px;
+        resize: none;
+    }
+}
+
+.UserBio-content {
+    padding: 10px 10px 1px;
+}
+
+.UserBio-placeholder {
+    opacity: 0.3;
+}

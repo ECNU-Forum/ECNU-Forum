@@ -1,0 +1,21 @@
+{
+  "name": "@acpl/mobile-tab",
+  "packageManager": "yarn@3.1.1",
+  "version": "1.0.0",
+  "private": true,
+  "prettier": "@flarum/prettier-config",
+  "devDependencies": {
+    "@flarum/prettier-config": "^1.0.0",
+    "flarum-tsconfig": "^1.0.2",
+    "flarum-webpack-config": "^2.0.0",
+    "prettier": "^2.5.1",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "format": "prettier --write src",
+    "format-check": "prettier --check src"
+  }
+}

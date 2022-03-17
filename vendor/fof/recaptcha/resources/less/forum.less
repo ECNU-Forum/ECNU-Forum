@@ -1,0 +1,23 @@
+.SignUpModal {
+  .g-recaptcha {
+    > div {
+      width: auto !important;
+    }
+
+    .grecaptcha-badge {
+      width: 70px !important;
+      right: 0 !important;
+      transition: all 0.3s ease 0s !important;
+      bottom: 5px !important;
+      overflow: hidden !important;
+
+      &:hover {
+        width: 256px !important;
+      }
+    }
+  }
+}
+
+.ComposerBody-header .item-recaptcha {
+  display: block; // So it's always on its own line
+}

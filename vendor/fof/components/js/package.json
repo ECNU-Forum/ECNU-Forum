@@ -1,0 +1,18 @@
+{
+  "name": "@fof/components",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "flarum-webpack-config": "^0.1.0-beta.10",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "lint": "prettier --single-quote --trailing-comma es5 --print-width 150 --tab-width 4 --write src"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  }
+}

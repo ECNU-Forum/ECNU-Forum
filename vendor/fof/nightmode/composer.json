@@ -1,0 +1,69 @@
+{
+    "name": "fof/nightmode",
+    "description": "Add a Night Mode option for your users to use on your Flarum forum",
+    "keywords": [
+        "flarum",
+        "extension",
+        "friendsoflarum",
+        "nightmode",
+        "night",
+        "mode",
+        "option"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Lopez",
+            "email": "Lopez.T.Christian@gmail.com"
+        },
+        {
+            "name": "David Sevilla Martin",
+            "homepage": "https://discuss.flarum.org/u/datitisev",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/FriendsOfFlarum/nightmode/issues",
+        "source": "https://github.com/FriendsOfFlarum/nightmode",
+        "forum": "https://discuss.flarum.org/d/21492"
+    },
+    "homepage": "https://friendsofflarum.org",
+    "funding": [
+        {
+            "type": "website",
+            "url": "https://opencollective.com/fof/donate"
+        }
+    ],
+    "require": {
+        "flarum/core": "^1.2.0",
+        "fof/extend": "^1.0.0"
+    },
+    "replace": {
+        "reflar/nightmode": "*"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "FoF Night Mode",
+            "category": "feature",
+            "icon": {
+                "name": "far fa-moon",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/21492"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "FoF\\NightMode\\": "src/"
+        },
+        "files": [
+            "src/Overrides/Forum/ValidateCustomLess.php",
+            "src/Overrides/Frontend/Assets.php",
+            "src/Overrides/Frontend/RecompileFrontendAssets.php"
+        ]
+    }
+}

@@ -1,0 +1,172 @@
+.Reactions {
+    .Reactions--reactions {
+        display: inline-block;
+        vertical-align: text-bottom;
+
+        .Button-emoji-parent {
+            padding: 8px 10px 8px 3px;
+
+            &:not(:last-of-type) {
+                margin-right: 5px;
+            }
+
+            .button-emoji {
+                margin: auto !important;
+            }
+
+            .count {
+                margin-left: 2px;
+            }
+
+            &.disabled {
+                background: transparent;
+            }
+        }
+    }
+
+    img {
+        height: 20px;
+    }
+
+    .Button-label {
+        margin-left: 7px !important;
+    }
+
+    .reaction-icon {
+        font-size: 18px;
+        margin: 1px 0px 0px 2px !important;
+    }
+
+    .mobile-show {
+        opacity: 1;
+        visibility: visible;
+        transition: visibility 0s linear 0s, opacity 300ms;
+    }
+
+    .Reactions--ShowReactions {
+        padding: 0px;
+        margin-top: 9px;
+        float: right;
+    }
+
+    .CommentPost--Reactions {
+        background-color: @body-bg;
+        color: @text-color;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 300ms, opacity 300ms;
+        max-width: 270px;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1030;
+        padding: 8px 0;
+        margin: 7px 0;
+        left: auto;
+        bottom: 100%;
+        top: auto;
+
+        border-radius: 4px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+        font-size: 13px;
+        line-height: 2;
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+            width: 100%;
+            min-width: 160px;
+            max-width: 270px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            li {
+                display: inline-block;
+                margin-top: 3px;
+                margin-bottom: 3px;
+
+                button {
+                    padding: 1px 7.5px;
+                }
+            }
+        }
+    }
+
+    .Reactions--react {
+        display: inline-block;
+        position: relative;
+
+        &:hover .CommentPost--Reactions {
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0s linear 0s, opacity 300ms;
+        }
+    }
+}
+
+.ReactionsModal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+        color: @text-color;
+        font-size: 15px;
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+
+        .username {
+            vertical-align: bottom;
+        }
+
+        &:hover .username {
+            text-decoration: underline;
+        }
+    }
+
+    .ReactionsModal-group {
+        margin-bottom: 40px;
+
+        .ReactionsModal-reaction {
+            .emoji {
+                height: 24px;
+                vertical-align: middle;
+            }
+
+            .icon {
+                font-size: 15px;
+                vertical-align: middle;
+            }
+        }
+
+        .ReactionsModal-display {
+            display: inline-block;
+            max-width: 85%;
+            overflow-x: auto;
+
+            font-weight: bold;
+            vertical-align: bottom;
+            margin-left: 10px;
+        }
+
+        .ReactionsModal-delimiter {
+            margin-top: -5px !important;
+            margin-bottom: 15px !important;
+            border: 0;
+            clear:both;
+            display:block;
+            width: 100%;
+            background-color:#ccc;
+            height: 1px;
+        }
+    }
+
+    .Avatar {
+        .Avatar--size(24px);
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}
+

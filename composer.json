@@ -55,6 +55,7 @@
         "fof/upload": "^1.1",
         "fof/user-bio": "*",
         "guzzlehttp/guzzle": "^7.0",
+        "ianm/html-head": "*",
         "jslirola/flarum-ext-login2seeplus": "^0.2.0",
         "nyu8/flarum-email-filter": "^1.0",
         "overtrue/flysystem-qiniu": "^1.0",

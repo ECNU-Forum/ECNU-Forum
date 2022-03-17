@@ -9,3 +9,8 @@
 !storage
 storage/*
 !storage/views
+
+!vendor
+vendor/*
+!vendor/acpl
+!vendor/fof
