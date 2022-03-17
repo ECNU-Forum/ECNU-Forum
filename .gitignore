@@ -1,0 +1,11 @@
+/*
+!site.php
+!extend.php
+!composer.json
+!composer.lock
+!.nginx.conf
+!.gitignore
+
+!storage
+storage/*
+!storage/views
