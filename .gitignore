@@ -15,3 +15,8 @@ storage/*
 vendor/*
 !vendor/acpl
 !vendor/fof
+
+!public
+public/.htaccess
+public/assets/avatars
+public/assets/files
