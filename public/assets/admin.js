@@ -18,6 +18,13 @@ flarum.extensions['flarum-sticky']=module.exports;
 
 var module={};
 
+module.exports=function(t){var n={};function e(o){if(n[o])return n[o].exports;var r=n[o]={i:o,l:!1,exports:{}};return t[o].call(r.exports,r,r.exports,e),r.l=!0,r.exports}return e.m=t,e.c=n,e.d=function(t,n,o){e.o(t,n)||Object.defineProperty(t,n,{enumerable:!0,get:o})},e.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},e.t=function(t,n){if(1&n&&(t=e(t)),8&n)return t;if(4&n&&"object"==typeof t&&t&&t.__esModule)return t;var o=Object.create(null);if(e.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:t}),2&n&&"string"!=typeof t)for(var r in t)e.d(o,r,function(n){return t[n]}.bind(null,r));return o},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,n){return Object.prototype.hasOwnProperty.call(t,n)},e.p="",e(e.s=3)}([function(t,n){t.exports=flarum.core.compat["admin/app"]},function(t,n){t.exports=flarum.core.compat["admin/components/ExtensionPage"]},function(t,n){t.exports=flarum.core.compat["common/components/LinkButton"]},function(t,n,e){"use strict";e.r(n);var o=e(0),r=e.n(o);function i(t,n){return(i=Object.setPrototypeOf||function(t,n){return t.__proto__=n,t})(t,n)}var a=e(1),u=e.n(a),f=e(2),c=e.n(f),s=function(t){var n,e;function o(){return t.apply(this,arguments)||this}e=t,(n=o).prototype=Object.create(e.prototype),n.prototype.constructor=n,i(n,e);var a=o.prototype;return a.oninit=function(n){t.prototype.oninit.call(this,n)},a.content=function(){var t=this;return[m("div",{className:"container"},m("div",{className:"FoFFormattingSettingsPage"},m("div",{className:"Form"},r.a.forum.attribute("fof-formatting.plugins").map((function(n){return t.buildSettingComponent({type:"boolean",setting:"fof-formatting.plugin."+n.toLowerCase(),label:m(c.a,{href:"https://s9etextformatter.readthedocs.io/Plugins/"+n+"/Synopsis",external:!0,target:"_blank"},n),help:r.a.translator.trans("fof-formatting.admin.plugins."+n)})})),m("div",{className:"Form-group"},this.submitButton()))))]},o}(u.a);r.a.initializers.add("fof/formatting",(function(){r.a.extensionData.for("fof-formatting").registerPage(s)}))}]);
+
+
+flarum.extensions['fof-formatting']=module.exports;
+
+var module={};
+
 (()=>{var e={n:r=>{var a=r&&r.__esModule?()=>r.default:()=>r;return e.d(a,{a}),a},d:(r,a)=>{for(var o in a)e.o(a,o)&&!e.o(r,o)&&Object.defineProperty(r,o,{enumerable:!0,get:a[o]})},o:(e,r)=>Object.prototype.hasOwnProperty.call(e,r),r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},r={};(()=>{"use strict";e.r(r);const a=flarum.core.compat.app;var o=e.n(a);o().initializers.add("flarum-suspend",(function(){o().extensionData.for("flarum-suspend").registerPermission({icon:"fas fa-ban",label:o().translator.trans("flarum-suspend.admin.permissions.suspend_users_label"),permission:"user.suspend"},"moderate")}))})(),module.exports=r})();
 
 
@@ -37,6 +44,13 @@ var module={};
 
 
 flarum.extensions['flarum-tags']=module.exports;
+
+var module={};
+
+(()=>{var e={n:r=>{var o=r&&r.__esModule?()=>r.default:()=>r;return e.d(o,{a:o}),o},d:(r,o)=>{for(var t in o)e.o(o,t)&&!e.o(r,t)&&Object.defineProperty(r,t,{enumerable:!0,get:o[t]})},o:(e,r)=>Object.prototype.hasOwnProperty.call(e,r),r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},r={};(()=>{"use strict";e.r(r);const o=flarum.core.compat["admin/app"];var t=e.n(o);t().initializers.add("flarum-likes",(function(){t().extensionData.for("flarum-likes").registerPermission({icon:"far fa-thumbs-up",label:t().translator.trans("flarum-likes.admin.permissions.like_posts_label"),permission:"discussion.likePosts"},"reply")}))})(),module.exports=r})();
+
+
+flarum.extensions['flarum-likes']=module.exports;
 
 var module={};
 
@@ -263,6 +277,13 @@ flarum.extensions['fof-nightmode']=module.exports;
 
 var module={};
 
+(()=>{var e={n:s=>{var r=s&&s.__esModule?()=>s.default:()=>s;return e.d(r,{a:r}),r},d:(s,r)=>{for(var i in r)e.o(r,i)&&!e.o(s,i)&&Object.defineProperty(s,i,{enumerable:!0,get:r[i]})},o:(e,s)=>Object.prototype.hasOwnProperty.call(e,s),r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},s={};(()=>{"use strict";e.r(s);const r=flarum.core.compat["admin/app"];var i=e.n(r);i().initializers.add("fof/merge-discussions",(function(){i().extensionData.for("fof-merge-discussions").registerPermission({icon:"fas fa-code-branch fa-flip-vertical",label:i().translator.trans("fof-merge-discussions.admin.permissions.merge_discussions_label"),permission:"discussion.merge"},"moderate").registerSetting({label:i().translator.trans("fof-merge-discussions.admin.settings.search_result_label"),type:"number",setting:"fof-merge-discussions.search_limit",placeholder:"4",help:i().translator.trans("fof-merge-discussions.admin.settings.search_result_help"),min:1,max:99})}))})(),module.exports=s})();
+
+
+flarum.extensions['fof-merge-discussions']=module.exports;
+
+var module={};
+
 module.exports=function(t){var e={};function n(o){if(e[o])return e[o].exports;var i=e[o]={i:o,l:!1,exports:{}};return t[o].call(i.exports,i,i.exports,n),i.l=!0,i.exports}return n.m=t,n.c=e,n.d=function(t,e,o){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:o})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var i in t)n.d(o,i,function(e){return t[e]}.bind(null,i));return o},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=26)}([function(t,e){t.exports=flarum.core.compat["common/Model"]},function(t,e){t.exports=flarum.core.compat["common/app"]},function(t,e,n){"use strict";function o(t,e){return(o=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function i(t,e){t.prototype=Object.create(e.prototype),t.prototype.constructor=t,o(t,e)}n.d(e,"a",(function(){return i}))},function(t,e,n){"use strict";function o(t){return t.slice(0).sort((function(t,e){var n=t.position(),o=e.position();return n>o?1:n<o?-1:0}))}n.d(e,"a",(function(){return o}))},function(t,e){t.exports=flarum.core.compat["admin/app"]},function(t,e,n){"use strict";n.d(e,"a",(function(){return l}));var o=n(2),i=n(0),r=n.n(i),a=n(12),l=function(t){function e(){return t.apply(this,arguments)||this}return Object(o.a)(e,t),e}(n.n(a)()(r.a,{title:r.a.attribute("title"),icon:r.a.attribute("icon"),type:r.a.attribute("type"),url:r.a.attribute("url"),position:r.a.attribute("position"),isInternal:r.a.attribute("isInternal"),isNewtab:r.a.attribute("isNewtab"),isChild:r.a.attribute("isChild"),parent:r.a.hasOne("parent"),visibility:r.a.attribute("visibility")}))},function(t,e){t.exports=flarum.core.compat["common/helpers/icon"]},function(t,e){t.exports=flarum.core.compat["common/components/Button"]},function(t,e){t.exports=flarum.core.compat["common/utils/Stream"]},,function(t,e,n){"use strict";n.d(e,"a",(function(){return o}));var o={sortLinks:n(3).a}},function(t,e,n){"use strict";n.d(e,"a",(function(){return o}));var o={Link:n(5).a}},function(t,e){t.exports=flarum.core.compat["common/utils/mixin"]},function(t,e){t.exports=flarum.core.compat["common/utils/ItemList"]},,,,,,,,function(t,e){t.exports=flarum.core.compat["common/components/ExtensionPage"]},function(t,e){t.exports=flarum.core.compat["common/components/Modal"]},function(t,e){t.exports=flarum.core.compat["common/utils/withAttr"]},function(t,e){t.exports=flarum.core.compat["common/components/Select"]},,function(t,e,n){"use strict";n.r(e),n.d(e,"components",(function(){return Le})),n.d(e,"utils",(function(){return Xe.a})),n.d(e,"models",(function(){return Re.a}));var o=n(1),i=n.n(o),r=n(5),a=n(2),l=n(4),s=n.n(l),c=n(21),u=n.n(c),d=n(7),h=n.n(d),f=n(6),p=n.n(f);
 /**!
  * Sortable 1.14.0
@@ -312,13 +333,6 @@ flarum.extensions['flarum-lock']=module.exports;
 
 var module={};
 
-(()=>{var e={n:r=>{var o=r&&r.__esModule?()=>r.default:()=>r;return e.d(o,{a:o}),o},d:(r,o)=>{for(var t in o)e.o(o,t)&&!e.o(r,t)&&Object.defineProperty(r,t,{enumerable:!0,get:o[t]})},o:(e,r)=>Object.prototype.hasOwnProperty.call(e,r),r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},r={};(()=>{"use strict";e.r(r);const o=flarum.core.compat["admin/app"];var t=e.n(o);t().initializers.add("flarum-likes",(function(){t().extensionData.for("flarum-likes").registerPermission({icon:"far fa-thumbs-up",label:t().translator.trans("flarum-likes.admin.permissions.like_posts_label"),permission:"discussion.likePosts"},"reply")}))})(),module.exports=r})();
-
-
-flarum.extensions['flarum-likes']=module.exports;
-
-var module={};
-
 module.exports=function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=3)}([function(e,t){e.exports=flarum.core.compat["admin/app"]},function(e,t){e.exports=flarum.core.compat["admin/components/ExtensionPage"]},function(e,t){e.exports=flarum.core.compat["common/components/Link"]},function(e,t,n){"use strict";n.r(t);var r=n(0),o=n.n(r);function a(e,t){return(a=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}var u=n(1),i=n.n(u),l=n(2),c=n.n(l),s=function(e){var t,n;function r(){return e.apply(this,arguments)||this}return n=e,(t=r).prototype=Object.create(n.prototype),t.prototype.constructor=t,a(t,n),r.prototype.content=function(){return console.log("[ app.routes ] >",app.routes),m("div",{className:"ChineseNoticePage"},m("div",{className:"Form-group"},m("label",null,m("i",{class:"fas fa-info-circle"})," 提示"),m("p",null,"您已开启中文语言包，如需使中文作为 Flarum 的默认语言，请前往",m(c.a,{href:app.route("basics")},"「常规」"),"页面设置。")),m("div",{className:"Form-group"},m("label",null,m("i",{class:"fas fa-language"})," 贡献"),m("p",null,"如果您对翻译有更好的建议或纠错，欢迎到 ",m("a",{href:"https://weblate.rob006.net/languages/zh_Hans/flarum/",target:"_blank"},"翻译平台 ",m("i",{class:"fas fa-external-link-alt"}))," 提交您的宝贵意见。")))},r}(i.a);o.a.initializers.add("flarum-lang/chinese-simplified",(function(e){e.extensionData.for("flarum-lang-chinese-simplified").registerPage(s)}))}]);
 
 
@@ -330,6 +344,13 @@ module.exports=function(e){var t={};function r(n){if(t[n])return t[n].exports;va
 
 
 flarum.extensions['extiverse-mercury']=module.exports;
+
+var module={};
+
+module.exports=function(e){var n={};function r(t){if(n[t])return n[t].exports;var i=n[t]={i:t,l:!1,exports:{}};return e[t].call(i.exports,i,i.exports,r),i.l=!0,i.exports}return r.m=e,r.c=n,r.d=function(e,n,t){r.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:t})},r.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.t=function(e,n){if(1&n&&(e=r(e)),8&n)return e;if(4&n&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(r.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var i in e)r.d(t,i,function(n){return e[n]}.bind(null,i));return t},r.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(n,"a",n),n},r.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},r.p="",r(r.s=6)}({0:function(e,n){e.exports=flarum.core.compat["admin/app"]},6:function(e,n,r){"use strict";r.r(n);var t=r(0),i=r.n(t);i.a.initializers.add("clarkwinkelmann-likes-received",(function(){i.a.extensionData.for("clarkwinkelmann-likes-received").registerPermission({icon:"fas fa-thumbs-up",label:i.a.translator.trans("clarkwinkelmann-likes-received.admin.permission.view"),permission:"clarkwinkelmann-likes-received.view",allowGuest:!0},"view")}))}});
+
+
+flarum.extensions['clarkwinkelmann-likes-received']=module.exports;
 
 var module={};
 

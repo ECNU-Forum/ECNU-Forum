@@ -1,0 +1,50 @@
+{
+  "name": "fof/formatting",
+  "description": "Customize TextFormatter with plugins through the admin interface",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.0.0"
+  },
+  "support": {
+    "issues": "https://github.com/FriendsOfFlarum/formatting/issues",
+    "source": "https://github.com/FriendsOfFlarum/formatting",
+    "forum": "https://discuss.flarum.org/d/17770"
+  },
+  "homepage": "https://friendsofflarum.org",
+  "funding": [
+    {
+      "type": "website",
+      "url": "https://opencollective.com/fof/donate"
+    }
+  ],
+  "authors": [
+    {
+      "name": "David Sevilla Martín",
+      "email": "me+fof@datitisev.me",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FoF\\Formatting\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "FoF Formatting",
+      "category": "feature",
+      "icon": {
+        "name": "fas fa-font",
+        "backgroundColor": "#e74c3c",
+        "color": "#fff"
+      }
+    },
+    "flagrow": {
+      "discuss": "https://discuss.flarum.org/d/17770"
+    }
+  }
+}

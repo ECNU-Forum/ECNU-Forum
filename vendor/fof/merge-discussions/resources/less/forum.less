@@ -1,0 +1,53 @@
+.FoFMergeDiscussionsModal {
+  .MergeDiscussions-Discussions {
+    ul {
+      list-style-type: none;
+      padding-left: 5px;
+    }
+
+    .DeleteEntry-Button {
+      color: @control-danger-color;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  }
+
+  .FormGroup.hidden {
+    display: none;
+    visibility: hidden;
+  }
+
+  .MergeDiscussions-Search {
+    .Search-input input {
+      width: 100%;
+    }
+
+    .Search-results {
+      left: 0;
+      position: relative;
+    }
+  }
+
+  .MergeDiscussions-Preview {
+    .Hero {
+      margin-left: -10px;
+      margin-right: -10px;
+      padding: 10px 0;
+    }
+
+    .MergeDiscussions-PostStream {
+      margin-top: 10px;
+      padding: 0 10px;
+
+      background-color: @body-bg;
+      .box-shadow(0 2px 6px @shadow-color);
+      border-radius: 5px;
+
+
+      height: 400px;
+      resize: vertical;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+}

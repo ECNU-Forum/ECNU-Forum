@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "155af3523ad42062b62515126bd65f27",
+    "content-hash": "eff0609255aa1ceb0910dde8615c6fbc",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -914,6 +914,68 @@
             "time": "2021-05-28T15:28:24+00:00"
         },
         {
+            "name": "clarkwinkelmann/flarum-ext-likes-received",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clarkwinkelmann/flarum-ext-likes-received.git",
+                "reference": "4972a000aca3022ef9ec4428000b8a5af59c18ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clarkwinkelmann/flarum-ext-likes-received/zipball/4972a000aca3022ef9ec4428000b8a5af59c18ca",
+                "reference": "4972a000aca3022ef9ec4428000b8a5af59c18ca",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0",
+                "flarum/likes": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Likes Received",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-thumbs-up",
+                        "backgroundColor": "#684ba6",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/24489"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ClarkWinkelmann\\LikesReceived\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Shows the total number of likes received on a user profile",
+            "keywords": [
+                "flarum",
+                "likes"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/24489",
+                "issues": "https://github.com/clarkwinkelmann/flarum-ext-likes-received/issues",
+                "source": "https://github.com/clarkwinkelmann/flarum-ext-likes-received"
+            },
+            "time": "2021-07-28T17:19:50+00:00"
+        },
+        {
             "name": "components/font-awesome",
             "version": "5.15.4",
             "source": {
@@ -1032,6 +1094,146 @@
                 }
             ],
             "time": "2022-03-16T11:22:07+00:00"
+        },
+        {
+            "name": "darkle/fancybox",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iamdarkle/fancybox.git",
+                "reference": "e2f1f018df44aebfaf4250dc9aecd50e4db02400"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iamdarkle/fancybox/zipball/e2f1f018df44aebfaf4250dc9aecd50e4db02400",
+                "reference": "e2f1f018df44aebfaf4250dc9aecd50e4db02400",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Fancybox",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-images",
+                        "backgroundColor": "#00c8b0",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "darkle\\fancybox\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Darkle",
+                    "email": "tomasromero@outlook.com"
+                },
+                {
+                    "name": "Mark Cutting",
+                    "homepage": "https://phenomlab.com"
+                }
+            ],
+            "description": "Fancybox is a touch enabled and responsive tool for displaying images in a 'lightbox' that floats overtop of web page.",
+            "keywords": [
+                "extension",
+                "fancybox",
+                "flarum",
+                "images"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/29102",
+                "issues": "https://github.com/iamdarkle/fancybox/issues",
+                "source": "https://github.com/iamdarkle/fancybox"
+            },
+            "time": "2021-12-13T14:05:27+00:00"
+        },
+        {
+            "name": "datlechin/flarum-link-preview",
+            "version": "v0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/datlechin/flarum-link-preview.git",
+                "reference": "fec7fc8861a28198fbbf92a016c137ba0bd5aefd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/datlechin/flarum-link-preview/zipball/fec7fc8861a28198fbbf92a016c137ba0bd5aefd",
+                "reference": "fec7fc8861a28198fbbf92a016c137ba0bd5aefd",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Link Preview",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-eye",
+                        "color": "#fff",
+                        "backgroundColor": "#D3241C"
+                    }
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "admin": false,
+                        "forum": true,
+                        "js": true,
+                        "jsCommon": false,
+                        "css": true,
+                        "locale": false,
+                        "gitConf": true,
+                        "githubActions": true,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "backendTesting": false,
+                        "editorConfig": true,
+                        "styleci": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Datlechin\\LinkPreview\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ngo Quoc Dat",
+                    "email": "datlechin@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Automatically display a rich preview of the link contents.",
+            "homepage": "https://ngoquocdat.com",
+            "keywords": [
+                "flarum",
+                "flarum-extension",
+                "link preview",
+                "preview"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/30011",
+                "issues": "https://github.com/datlechin/flarum-link-preview/issues",
+                "source": "https://github.com/datlechin/flarum-birthdays"
+            },
+            "time": "2022-02-03T16:12:34+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -3690,6 +3892,72 @@
             "time": "2021-05-21T23:38:23+00:00"
         },
         {
+            "name": "fof/formatting",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/formatting.git",
+                "reference": "fd46d22c443af40293af1ecd2697065c96c18c23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/formatting/zipball/fd46d22c443af40293af1ecd2697065c96c18c23",
+                "reference": "fd46d22c443af40293af1ecd2697065c96c18c23",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Formatting",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-font",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/17770"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Formatting\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Customize TextFormatter with plugins through the admin interface",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/17770",
+                "issues": "https://github.com/FriendsOfFlarum/formatting/issues",
+                "source": "https://github.com/FriendsOfFlarum/formatting"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-11-06T15:42:57+00:00"
+        },
+        {
             "name": "fof/links",
             "version": "1.0.3",
             "source": {
@@ -3757,6 +4025,77 @@
                 }
             ],
             "time": "2021-10-14T12:24:25+00:00"
+        },
+        {
+            "name": "fof/merge-discussions",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/merge-discussions.git",
+                "reference": "5010cad342e04dba218dead2114d24e98093d182"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/merge-discussions/zipball/5010cad342e04dba218dead2114d24e98093d182",
+                "reference": "5010cad342e04dba218dead2114d24e98093d182",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Merge Discussions",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-code-branch fa-flip-vertical",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/19460"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\MergeDiscussions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                },
+                {
+                    "name": "IanM",
+                    "email": "ian@blomstra.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Merge two or more discussions into one",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/19460",
+                "issues": "https://github.com/FriendsOfFlarum/merge-discussions/issues",
+                "source": "https://github.com/FriendsOfFlarum/merge-discussions"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2022-02-20T16:52:13+00:00"
         },
         {
             "name": "fof/nightmode",
@@ -6914,6 +7253,75 @@
                 }
             ],
             "time": "2021-11-21T11:48:40+00:00"
+        },
+        {
+            "name": "malago/flarum-ext-fancybox",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/malago86/flarum-ext-fancybox.git",
+                "reference": "5921ed85cada59696b12cdc28276460075e391cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/malago86/flarum-ext-fancybox/zipball/5921ed85cada59696b12cdc28276460075e391cb",
+                "reference": "5921ed85cada59696b12cdc28276460075e391cb",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0",
+                "fof/formatting": ">=0.3.1"
+            },
+            "conflict": {
+                "squeevee/flarum-ext-fancybox": ">=0.1-beta",
+                "the-turk/flarum-ext-fancybox": ">=0.1-beta"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FancyBox",
+                    "category": "appearance",
+                    "icon": {
+                        "name": "far fa-image",
+                        "backgroundColor": "#b72a2a",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/19535-fancybox-extension-beta"
+                },
+                "support": {
+                    "issues": "https://github.com/malago86/flarum-ext-fancybox/issues",
+                    "source": "https://github.com/malago86/flarum-ext-fancybox"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Malago\\FancyBox\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ellie Hawk",
+                    "email": "squeevee@yahoo.com"
+                },
+                {
+                    "name": "Hasan Özbey",
+                    "email": "hasanoozbey@gmail.com"
+                }
+            ],
+            "description": "Image formatting and lightbox modal using fancyBox (original from the-turk and squeevee).",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "source": "https://github.com/malago86/flarum-ext-fancybox/tree/0.3.0"
+            },
+            "time": "2021-05-28T18:13:38+00:00"
         },
         {
             "name": "matthiasmullie/minify",

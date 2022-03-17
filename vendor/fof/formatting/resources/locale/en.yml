@@ -1,0 +1,10 @@
+fof-formatting:
+  admin:
+    plugins:
+      Autoimage: Convert image URLs into actual images
+      Autovideo: Convert video URLs into playable videos
+      FancyPants: Use fancy typography
+      HTMLEntities: Use HTML entities
+      MediaEmbed: Embed content from allowed sites
+      PipeTables: ASCII-style tables
+      TaskLists: GitHub/GitLab flavored task lists
