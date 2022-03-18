@@ -1,0 +1,46 @@
+fof-polls:
+  admin:
+    permissions:
+      view_results_without_voting: View results without voting
+      start: Start a poll
+      self_edit: Allow users to edit their own polls
+      vote: Vote on polls
+      change_vote: Change vote
+      moderate: Edit & remove polls
+
+  forum:
+    days_remaining: Poll ends {time}.
+    no_permission: You don't have permission to vote
+    poll_ended: This poll has ended.
+    public_poll: View voters
+
+    composer_discussion:
+      add_poll: Add Poll
+      edit_poll: => fof-polls.forum.moderation.edit
+
+    modal:
+      add_title: Add a Poll
+      add_option_label: Add an Option
+      date_placeholder: Poll end date (Optional)
+      edit_title: Edit Poll
+      include_question: You must include a question
+      max: You can have a maximum of 10 answers
+      min: You must include a minimum of 2 answers
+      no_voters: No Votes
+      option_placeholder: Answer
+      options_label: Answers
+      public_poll_label: Allow people to see who voted
+      question_placeholder: Question
+      submit: Submit
+
+    moderation:
+      delete: Remove Poll
+      delete_confirm: Are you sure you want to delete this poll?
+      edit: Edit Poll
+
+    tooltip:
+      badge: Poll
+      votes: "{count, plural, one {# vote} other {# votes}}"
+
+    votes_modal:
+      title: Voters

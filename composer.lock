@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eff0609255aa1ceb0910dde8615c6fbc",
+    "content-hash": "5ff62809453a85ce70405e41529bbd6a",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -288,6 +288,62 @@
                 "source": "https://github.com/askvortsov1/flarum-auto-moderator"
             },
             "time": "2021-09-22T19:39:04+00:00"
+        },
+        {
+            "name": "askvortsov/flarum-moderator-warnings",
+            "version": "v0.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/askvortsov1/flarum-moderator-warnings.git",
+                "reference": "5be9d5cf272c88262fb0161f3a0b80c7eb445bd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/askvortsov1/flarum-moderator-warnings/zipball/5be9d5cf272c88262fb0161f3a0b80c7eb445bd2",
+                "reference": "5be9d5cf272c88262fb0161f3a0b80c7eb445bd2",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Moderator Warnings",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-exclamation-circle",
+                        "backgroundColor": "#6932D1",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Askvortsov\\FlarumWarnings\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Skvortsov",
+                    "email": "askvortsov@flarum.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Moderator Warnings extension for flarum.",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/23228-moderator-warnings-extension",
+                "issues": "https://github.com/askvortsov1/flarum-moderator-warnings/issues",
+                "source": "https://github.com/askvortsov1/flarum-moderator-warnings"
+            },
+            "time": "2021-08-29T18:39:09+00:00"
         },
         {
             "name": "axy/backtrace",
@@ -4027,6 +4083,85 @@
             "time": "2021-10-14T12:24:25+00:00"
         },
         {
+            "name": "fof/masquerade",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/masquerade.git",
+                "reference": "3166ec49f0359dc53c85a34eb7b7aeda9effa466"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/masquerade/zipball/3166ec49f0359dc53c85a34eb7b7aeda9effa466",
+                "reference": "3166ec49f0359dc53c85a34eb7b7aeda9effa466",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0"
+            },
+            "replace": {
+                "flagrow/masquerade": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Masquerade",
+                    "category": "feature",
+                    "icon": {
+                        "image": "resources/logo.svg",
+                        "backgroundColor": "#e74c3c",
+                        "backgroundSize": "90%",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundPosition": "center"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/5791"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Masquerade\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@klabbers.email",
+                    "homepage": "https://luceos.com/"
+                },
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/"
+                }
+            ],
+            "description": "User profile builder extension for your Flarum forum.",
+            "keywords": [
+                "extension",
+                "flarum",
+                "member profile",
+                "profile",
+                "user profile"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/5791",
+                "issues": "https://github.com/FriendsOfFlarum/masquerade/issues",
+                "source": "https://github.com/FriendsOfFlarum/masquerade"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2021-12-23T12:25:00+00:00"
+        },
+        {
             "name": "fof/merge-discussions",
             "version": "1.2.1",
             "source": {
@@ -4255,6 +4390,79 @@
                 }
             ],
             "time": "2022-03-14T20:50:02+00:00"
+        },
+        {
+            "name": "fof/polls",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/polls.git",
+                "reference": "3a141e2ad65d33ed578211bfa7b17b1626511fee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/polls/zipball/3a141e2ad65d33ed578211bfa7b17b1626511fee",
+                "reference": "3a141e2ad65d33ed578211bfa7b17b1626511fee",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "conflict": {
+                "reflar/polls": "< 1.3.4"
+            },
+            "replace": {
+                "reflar/polls": "^1.3.4"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Polls",
+                    "category": "discussion",
+                    "icon": {
+                        "name": "fas fa-signal",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20586"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Polls\\": "src/",
+                    "FoF\\Polls\\Migrations\\": "migrations/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martin",
+                    "email": "david.s@redevs.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": " A Flarum extension that adds polls to your discussions",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20586",
+                "issues": "https://github.com/FriendsOfFlarum/polls/issues",
+                "source": "https://github.com/FriendsOfFlarum/polls"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-12-22T17:49:56+00:00"
         },
         {
             "name": "fof/reactions",
@@ -5176,6 +5384,76 @@
                 "source": "https://github.com/imorland/html-head"
             },
             "time": "2022-01-25T10:17:42+00:00"
+        },
+        {
+            "name": "ianm/synopsis",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imorland/synopsis.git",
+                "reference": "6198d72672edfb1e606d8e43c8f18134741c347c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imorland/synopsis/zipball/6198d72672edfb1e606d8e43c8f18134741c347c",
+                "reference": "6198d72672edfb1e606d8e43c8f18134741c347c",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "conflict": {
+                "jordanjay29/flarum-ext-summaries": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/25772"
+                },
+                "flarum-extension": {
+                    "title": "Synopsis",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-comment-dots",
+                        "backgroundColor": "#0072e3",
+                        "color": "#fff"
+                    },
+                    "optional-dependencies": [
+                        "flarum/tags"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "IanM\\Synopsis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "IanM",
+                    "homepage": "https://discuss.flarum.org/u/ianm"
+                }
+            ],
+            "description": "Show summary excerpts on discussion lists.",
+            "keywords": [
+                "discussion",
+                "excerpt",
+                "excerpts",
+                "flarum",
+                "summaries",
+                "summary",
+                "synopsis"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/25772",
+                "issues": "https://github.com/imorland/synopsis/issues",
+                "source": "https://github.com/imorland/synopsis"
+            },
+            "time": "2022-01-25T08:57:29+00:00"
         },
         {
             "name": "illuminate/bus",
@@ -8105,6 +8383,66 @@
                 "source": "https://github.com/nikic/FastRoute/tree/master"
             },
             "time": "2015-06-18T19:15:47+00:00"
+        },
+        {
+            "name": "noriods/auto-more",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noriods/automore.git",
+                "reference": "9dabe64b84a358b198209631dad8b5fe29f1fc45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noriods/automore/zipball/9dabe64b84a358b198209631dad8b5fe29f1fc45",
+                "reference": "9dabe64b84a358b198209631dad8b5fe29f1fc45",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Auto More",
+                    "icon": {
+                        "name": "fas fa-angle-double-down",
+                        "backgroundColor": "#94dcff",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/11961-auto-more"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "NorioDS",
+                    "email": "flarum@guitartalk.co.za",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Katos",
+                    "email": "katos@flarum.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Automatically clicks the 'load more' button when it comes into view.",
+            "keywords": [
+                "automatic",
+                "flarum",
+                "load",
+                "more"
+            ],
+            "support": {
+                "issues": "https://github.com/noriods/automore/issues",
+                "source": "https://github.com/noriods/automore/tree/v1.0.0"
+            },
+            "time": "2021-06-03T08:43:20+00:00"
         },
         {
             "name": "nyholm/psr7",

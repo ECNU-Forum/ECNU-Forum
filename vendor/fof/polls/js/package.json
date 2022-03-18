@@ -1,0 +1,23 @@
+{
+  "name": "@fof/polls",
+  "version": "0.0.0",
+  "private": true,
+  "prettier": "@flarum/prettier-config",
+  "dependencies": {
+    "flarum-webpack-config": "^1.0.0",
+    "flatpickr": "^4.6.9",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "dev": "npm run build:css && webpack --mode development --watch",
+    "build": "npm run build:css && webpack --mode production",
+    "format": "prettier --write src",
+    "build:css": "cp ./node_modules/flatpickr/dist/flatpickr.min.css ../resources/less/flatpickr.min.css"
+  },
+  "devDependencies": {
+    "@flarum/prettier-config": "^1.0.0",
+    "flarum-tsconfig": "^1.0.2",
+    "prettier": "^2.4.1"
+  }
+}

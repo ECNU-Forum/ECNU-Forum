@@ -1,0 +1,278 @@
+@import (inline) "flatpickr.min.css";
+
+.DiscussionComposer-poll {
+  margin-right: 15px;
+  vertical-align: 2px;
+
+  .PollLabel {
+    font-size: 85%;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    border-radius: @border-radius;
+    background: @body-bg;
+    color: @control-color;
+    text-transform: none;
+    border: 1px solid @primary-color;
+
+    &.none {
+      background: transparent;
+      border: 1px dotted @muted-color;
+      color: @muted-color;
+    }
+  }
+}
+
+.PollDiscussionModal {
+  .Form-group {
+    margin-top: 5px;
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  .PollModal--answers {
+    margin-bottom: 20px;
+
+    .Form-group {
+      display: flex;
+      margin-top: 2.5px;
+      margin-bottom: 18px;
+    }
+
+    fieldset {
+      flex-grow: 1;
+    }
+  }
+
+  .PollModal--button {
+    flex-shrink: 1;
+    margin-left: 10px;
+    text-align: right;
+
+    .Button--color(@muted-color; darken(@control-bg, 5%));
+
+    .icon {
+      margin-right: 0;
+      font-size: 12px;
+    }
+
+    &.small {
+      padding: 2px 7px;
+      float: right;
+    }
+  }
+
+  .PollModal--date {
+    display: flex;
+
+    input {
+      flex-grow: 1;
+    }
+
+    .Button {
+      flex-shrink: 1;
+      margin-left: 10px;
+    }
+  }
+
+  .Checkbox {
+    &.off {
+      .Checkbox-display {
+        background: darken(@control-bg, 5%);
+      }
+    }
+  }
+
+  .PollModal-SubmitButton {
+    margin-top: 10px;
+  }
+
+  .PollModal-Button {
+    margin-bottom: 15px;
+  }
+}
+
+.PollOption {
+  margin-bottom: 15px;
+  width: 45%;
+  margin-right: 15px;
+  float: left;
+
+  &:nth-child(odd) {
+    float: right;
+  }
+
+  .PollOption-active {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: var(--width, 0);
+    background-color: @muted-color;
+
+    animation: slideIn 1s ease-in-out;
+    transition: width 0.75s ease-in-out;
+
+    .checkmark {
+      background-color: #fabc67;
+    }
+  }
+
+  /* Percent */
+  .PollPercent {
+    float: right;
+    position: relative;
+    padding-right: 5px;
+  }
+
+  .PollLabel {
+    font-size: 85%;
+    font-weight: 600;
+    display: inline-block;
+    padding: .1em .5em;
+    border-radius: 4px;
+    background: #e8ecf3;
+    color: #667c99;
+    text-transform: none;
+  }
+
+  .PollBar {
+    background: transparent;
+    float: left;
+    width: 85%;
+    padding: 10px 10px 10px 40px;
+    .PollEnded& {
+      padding-left: 10px;
+    }
+    position: relative;
+    margin-left: 15px;
+    border-radius: 4px;
+    border: 2px solid @muted-color;
+    overflow: hidden;
+
+    &:hover {
+      background: #f3f3f39e;
+    }
+
+    label {
+      position: relative;
+      z-index: 2;
+
+      span {
+        padding-left: 15px;
+        font-size: 11px;
+        line-height: 19px;
+        font-weight: 600;
+      }
+    }
+    .PollAnswer span {
+      padding-left: 0;
+    }
+
+    &[data-selected=true] {
+      border-color: @secondary-color;
+
+      .PollOption-active {
+        background-color: @secondary-color;
+      }
+
+      label .PollAnswer {
+        color: contrast(@secondary-color);
+      }
+    }
+  }
+
+  label.checkbox {
+    margin-bottom: 0;
+    margin-left: -40px;
+
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      &[disabled] ~ .checkmark {
+        cursor: not-allowed;
+      }
+    }
+
+    .checkmark {
+      position: absolute;
+      margin-left: 10px;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      border: 1px solid;
+      border-radius: 4px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 6.75px;
+        top: 3px;
+        width: 5px;
+        height: 10px;
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.VotesModal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    color: @text-color;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+    &:hover .username {
+      text-decoration: underline;
+    }
+  }
+  .Avatar {
+    .Avatar--size(32px);
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+.PublicPollButton {
+  display: block;
+  margin: 10px 0px 15px 15px;
+}
+
+.PollInfoText {
+  margin-left: 15px;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0
+  }
+  to {
+    width: var(--width);
+  }
+}
+
+.PollPercent--option {
+  color: #868686;
+}

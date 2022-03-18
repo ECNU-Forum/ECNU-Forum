@@ -1,0 +1,48 @@
+.ProfileConfigurePane {
+    fieldset.Field {
+        padding: 5px;
+        background: @body-bg;
+        border-radius: @border-radius;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+
+        legend {
+            margin: 10px;
+            width: 100%;
+
+            .Field-toggle {
+                cursor: pointer;
+                margin-left: 5px;
+
+                .icon {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        &.active .Field-toggle .icon::before {
+            // We manipulate the icon via CSS because the whole open/close toggle system is currently CSS based
+            // If we move to a component state-based toggle we can switch the icon in the JS template instead
+            content: '\f0d8'; // caret-up
+        }
+
+        .Field-body {
+            display: none;
+        }
+
+        &.active .Field-body {
+            display: block;
+        }
+    }
+
+    .Checkbox--switch.off .Checkbox-display {
+        background: #d8d8d8;
+    }
+
+    @media @desktop-up {
+        .container {
+            max-width: 600px;
+            margin: 0;
+        }
+    }
+}
