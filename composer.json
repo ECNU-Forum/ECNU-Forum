@@ -69,6 +69,7 @@
         "jslirola/flarum-ext-login2seeplus": "^0.2.0",
         "league/flysystem-aws-s3-v3": "1.*",
         "malago/flarum-ext-fancybox": "^0.3.0",
+        "michaelbelgium/flarum-discussion-views": "^7.1",
         "noriods/auto-more": "^1.0",
         "nyu8/flarum-email-filter": "^1.0",
         "pipecraft/flarum-ext-id-slug": "^1.1",
