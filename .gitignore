@@ -5,3 +5,7 @@ vendor
 public/.htaccess
 public/assets/avatars
 public/assets/files
+
+!docker*
+!.env
+!build-docker.sh
