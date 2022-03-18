@@ -20,3 +20,5 @@ vendor/*
 public/.htaccess
 public/assets/avatars
 public/assets/files
+
+!packages

@@ -1,0 +1,3 @@
+[submodule "packages/ecnu-im-fabcybox"]
+	path = packages/ecnu-im-fabcybox
+	url = https://github.com/ECNU-Forum/fancybox
