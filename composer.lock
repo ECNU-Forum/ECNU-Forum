@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ff62809453a85ce70405e41529bbd6a",
+    "content-hash": "3797100981f61be4a2be403c6b3930b6",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -344,6 +344,147 @@
                 "source": "https://github.com/askvortsov1/flarum-moderator-warnings"
             },
             "time": "2021-08-29T18:39:09+00:00"
+        },
+        {
+            "name": "aws/aws-crt-php",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/awslabs/aws-crt-php.git",
+                "reference": "3942776a8c99209908ee0b287746263725685732"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/awslabs/aws-crt-php/zipball/3942776a8c99209908ee0b287746263725685732",
+                "reference": "3942776a8c99209908ee0b287746263725685732",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35|^5.4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "AWS SDK Common Runtime Team",
+                    "email": "aws-sdk-common-runtime@amazon.com"
+                }
+            ],
+            "description": "AWS Common Runtime for PHP",
+            "homepage": "http://aws.amazon.com/sdkforphp",
+            "keywords": [
+                "amazon",
+                "aws",
+                "crt",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/awslabs/aws-crt-php/issues",
+                "source": "https://github.com/awslabs/aws-crt-php/tree/v1.0.2"
+            },
+            "time": "2021-09-03T22:57:30+00:00"
+        },
+        {
+            "name": "aws/aws-sdk-php",
+            "version": "3.214.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "a2eacf8c1b55de4733f4cfc315da38f1d4c66501"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a2eacf8c1b55de4733f4cfc315da38f1d4c66501",
+                "reference": "a2eacf8c1b55de4733f4cfc315da38f1d4c66501",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-crt-php": "^1.0.2",
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-simplexml": "*",
+                "guzzlehttp/guzzle": "^5.3.3|^6.2.1|^7.0",
+                "guzzlehttp/promises": "^1.4.0",
+                "guzzlehttp/psr7": "^1.7.0|^2.0",
+                "mtdowling/jmespath.php": "^2.6",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "andrewsville/php-token-reflection": "^1.4",
+                "aws/aws-php-sns-message-validator": "~1.0",
+                "behat/behat": "~3.0",
+                "doctrine/cache": "~1.4",
+                "ext-dom": "*",
+                "ext-openssl": "*",
+                "ext-pcntl": "*",
+                "ext-sockets": "*",
+                "nette/neon": "^2.3",
+                "paragonie/random_compat": ">= 2",
+                "phpunit/phpunit": "^4.8.35|^5.4.3",
+                "psr/cache": "^1.0",
+                "psr/simple-cache": "^1.0",
+                "sebastian/comparator": "^1.2.3"
+            },
+            "suggest": {
+                "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications",
+                "doctrine/cache": "To use the DoctrineCacheAdapter",
+                "ext-curl": "To send requests using cURL",
+                "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
+                "ext-sockets": "To use client-side monitoring"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Aws\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Amazon Web Services",
+                    "homepage": "http://aws.amazon.com"
+                }
+            ],
+            "description": "AWS SDK for PHP - Use Amazon Web Services in your PHP project",
+            "homepage": "http://aws.amazon.com/sdkforphp",
+            "keywords": [
+                "amazon",
+                "aws",
+                "cloud",
+                "dynamodb",
+                "ec2",
+                "glacier",
+                "s3",
+                "sdk"
+            ],
+            "support": {
+                "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
+                "issues": "https://github.com/aws/aws-sdk-php/issues",
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.214.0"
+            },
+            "time": "2022-03-16T19:00:00+00:00"
         },
         {
             "name": "axy/backtrace",
@@ -1152,82 +1293,21 @@
             "time": "2022-03-16T11:22:07+00:00"
         },
         {
-            "name": "darkle/fancybox",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/iamdarkle/fancybox.git",
-                "reference": "e2f1f018df44aebfaf4250dc9aecd50e4db02400"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/iamdarkle/fancybox/zipball/e2f1f018df44aebfaf4250dc9aecd50e4db02400",
-                "reference": "e2f1f018df44aebfaf4250dc9aecd50e4db02400",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.0.0"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "Fancybox",
-                    "category": "feature",
-                    "icon": {
-                        "name": "fas fa-images",
-                        "backgroundColor": "#00c8b0",
-                        "color": "#fff"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "darkle\\fancybox\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Darkle",
-                    "email": "tomasromero@outlook.com"
-                },
-                {
-                    "name": "Mark Cutting",
-                    "homepage": "https://phenomlab.com"
-                }
-            ],
-            "description": "Fancybox is a touch enabled and responsive tool for displaying images in a 'lightbox' that floats overtop of web page.",
-            "keywords": [
-                "extension",
-                "fancybox",
-                "flarum",
-                "images"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/29102",
-                "issues": "https://github.com/iamdarkle/fancybox/issues",
-                "source": "https://github.com/iamdarkle/fancybox"
-            },
-            "time": "2021-12-13T14:05:27+00:00"
-        },
-        {
             "name": "datlechin/flarum-link-preview",
-            "version": "v0.1.4",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/datlechin/flarum-link-preview.git",
-                "reference": "fec7fc8861a28198fbbf92a016c137ba0bd5aefd"
+                "reference": "b9bc834d5b0087d48ca8a567e557554dd20447ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/datlechin/flarum-link-preview/zipball/fec7fc8861a28198fbbf92a016c137ba0bd5aefd",
-                "reference": "fec7fc8861a28198fbbf92a016c137ba0bd5aefd",
+                "url": "https://api.github.com/repos/datlechin/flarum-link-preview/zipball/b9bc834d5b0087d48ca8a567e557554dd20447ab",
+                "reference": "b9bc834d5b0087d48ca8a567e557554dd20447ab",
                 "shasum": ""
             },
             "require": {
+                "datlechin/phpscraper": "^0.5.3",
                 "flarum/core": "^1.2"
             },
             "type": "flarum-extension",
@@ -1243,12 +1323,12 @@
                 },
                 "flarum-cli": {
                     "modules": {
-                        "admin": false,
+                        "admin": true,
                         "forum": true,
                         "js": true,
                         "jsCommon": false,
                         "css": true,
-                        "locale": false,
+                        "locale": true,
                         "gitConf": true,
                         "githubActions": true,
                         "prettier": true,
@@ -1289,7 +1369,52 @@
                 "issues": "https://github.com/datlechin/flarum-link-preview/issues",
                 "source": "https://github.com/datlechin/flarum-birthdays"
             },
-            "time": "2022-02-03T16:12:34+00:00"
+            "time": "2022-02-14T03:55:42+00:00"
+        },
+        {
+            "name": "datlechin/phpscraper",
+            "version": "v0.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/datlechin/PHPScraper.git",
+                "reference": "004f461b53dd88ed60a9d721ea6a98ee25de98e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/datlechin/PHPScraper/zipball/004f461b53dd88ed60a9d721ea6a98ee25de98e7",
+                "reference": "004f461b53dd88ed60a9d721ea6a98ee25de98e7",
+                "shasum": ""
+            },
+            "require": {
+                "donatello-za/rake-php-plus": "^1.0.17",
+                "ext-intl": "*",
+                "fabpot/goutte": "^4.0.1",
+                "jeremykendall/php-domain-parser": "^6.1.0",
+                "php": "^7.3 | ^8.0",
+                "symfony/dom-crawler": "^5.4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "spekulatius\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "An oppinionated way to access the web. See tests/ for examples.",
+            "keywords": [
+                "PHP Library",
+                "PHP scraper",
+                "PHP scraping",
+                "web scraping",
+                "web-access"
+            ],
+            "support": {
+                "source": "https://github.com/datlechin/PHPScraper/tree/v0.5.5"
+            },
+            "time": "2022-02-12T14:41:37+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1941,6 +2066,66 @@
             "time": "2022-02-28T11:07:21+00:00"
         },
         {
+            "name": "donatello-za/rake-php-plus",
+            "version": "v1.0.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Donatello-za/rake-php-plus.git",
+                "reference": "e9e9c0862b3dc953d288e8f42c76e4ceaeca0619"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Donatello-za/rake-php-plus/zipball/e9e9c0862b3dc953d288e8f42c76e4ceaeca0619",
+                "reference": "e9e9c0862b3dc953d288e8f42c76e4ceaeca0619",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "php": ">=5.5.0",
+                "phpunit/phpunit": "~4.0|~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.13-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DonatelloZa\\RakePlus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Don Schoeman",
+                    "email": "ta.maximus@gmail.com"
+                }
+            ],
+            "description": "Yet another PHP implementation of the Rapid Automatic Keyword Extraction algorithm (RAKE).",
+            "homepage": "https://github.com/Donatello-za/rake-php-plus",
+            "keywords": [
+                "Algorithm",
+                "automatic",
+                "extraction",
+                "keyword",
+                "rake",
+                "rapid"
+            ],
+            "support": {
+                "issues": "https://github.com/Donatello-za/rake-php-plus/issues",
+                "source": "https://github.com/Donatello-za/rake-php-plus"
+            },
+            "time": "2022-02-23T18:42:03+00:00"
+        },
+        {
             "name": "dragonmantank/cron-expression",
             "version": "v3.3.1",
             "source": {
@@ -2000,6 +2185,63 @@
                 }
             ],
             "time": "2022-01-18T15:43:28+00:00"
+        },
+        {
+            "name": "ecnu-im/fancybox",
+            "version": "dev-99cfb1ca99388692cb48907080bde5c88f9a54dc",
+            "dist": {
+                "type": "path",
+                "url": "packages/ecnu-im-fabcybox",
+                "reference": "37bc897429dbf9e1f1a21fa498ebb062e0ae1785"
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Fancybox",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-images",
+                        "backgroundColor": "#00c8b0",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ecnu-im\\fancybox\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomás Romero",
+                    "email": "tomasromero@outlook.com"
+                },
+                {
+                    "name": "jjaychen",
+                    "email": "jjaychen1e@gmail.com"
+                }
+            ],
+            "description": "Fancybox is a touch enabled and responsive tool for displaying images in a 'lightbox' that floats overtop of web page.",
+            "keywords": [
+                "extension",
+                "fancybox",
+                "flarum",
+                "images"
+            ],
+            "support": {
+                "issues": "https://github.com/ECNU-Forum/fancybox/issues",
+                "source": "https://github.com/ECNU-Forum/fancybox",
+                "forum": "https://discuss.flarum.org/d/29102"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "egulias/email-validator",
@@ -2190,6 +2432,61 @@
                 "source": "https://github.com/extiverse/mercury/tree/0.1.3"
             },
             "time": "2021-06-16T23:58:50+00:00"
+        },
+        {
+            "name": "fabpot/goutte",
+            "version": "v4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfPHP/Goutte.git",
+                "reference": "f51940fbe0db060bc4fc0b3f1d19bc4ff3054b17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfPHP/Goutte/zipball/f51940fbe0db060bc4fc0b3f1d19bc4ff3054b17",
+                "reference": "f51940fbe0db060bc4fc0b3f1d19bc4ff3054b17",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "symfony/browser-kit": "^4.4|^5.0|^6.0",
+                "symfony/css-selector": "^4.4|^5.0|^6.0",
+                "symfony/dom-crawler": "^4.4|^5.0|^6.0",
+                "symfony/http-client": "^4.4|^5.0|^6.0",
+                "symfony/mime": "^4.4|^5.0|^6.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^5.0|^6.0"
+            },
+            "type": "application",
+            "autoload": {
+                "psr-4": {
+                    "Goutte\\": "Goutte"
+                },
+                "exclude-from-classmap": [
+                    "Goutte/Tests"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "A simple PHP Web Scraper",
+            "homepage": "https://github.com/FriendsOfPHP/Goutte",
+            "keywords": [
+                "scraper"
+            ],
+            "support": {
+                "issues": "https://github.com/FriendsOfPHP/Goutte/issues",
+                "source": "https://github.com/FriendsOfPHP/Goutte/tree/v4.0.2"
+            },
+            "time": "2021-12-17T17:15:01+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -4689,6 +4986,82 @@
             "time": "2021-11-26T01:28:02+00:00"
         },
         {
+            "name": "fof/terms",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/terms.git",
+                "reference": "14e1889882645b08c9c8547c3a013d6dceeda4b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/terms/zipball/14e1889882645b08c9c8547c3a013d6dceeda4b1",
+                "reference": "14e1889882645b08c9c8547c3a013d6dceeda4b1",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "conflict": {
+                "reflar/user-management": "^0.1.0"
+            },
+            "replace": {
+                "flagrow/terms": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Terms",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-paperclip",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/11714"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Terms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/"
+                }
+            ],
+            "description": "Ask users to accept terms of use before using the forum",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "Policy",
+                "extension",
+                "flarum",
+                "terms",
+                "tos"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/11714",
+                "issues": "https://github.com/FriendsOfFlarum/terms/issues",
+                "source": "https://github.com/FriendsOfFlarum/terms"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-11-26T01:07:21+00:00"
+        },
+        {
             "name": "fof/upload",
             "version": "1.1.0",
             "source": {
@@ -6709,6 +7082,101 @@
             "time": "2022-02-15T05:45:48+00:00"
         },
         {
+            "name": "jeremykendall/php-domain-parser",
+            "version": "6.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeremykendall/php-domain-parser.git",
+                "reference": "e195ab7bf0dd0ca231e066790fb0771f1acba5f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeremykendall/php-domain-parser/zipball/e195ab7bf0dd0ca231e066790fb0771f1acba5f1",
+                "reference": "e195ab7bf0dd0ca231e066790fb0771f1acba5f1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-filter": "*",
+                "ext-intl": "*",
+                "ext-json": "*",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v3.5.0",
+                "guzzlehttp/guzzle": "^7.0",
+                "guzzlehttp/psr7": "^1.6||^2.0",
+                "phpstan/phpstan": "^1.4.6.",
+                "phpstan/phpstan-phpunit": "^1.0.0",
+                "phpstan/phpstan-strict-rules": "^1.1.0",
+                "phpunit/phpunit": "^9.5.13",
+                "psalm/plugin-phpunit": "^0.15.2",
+                "psr/http-factory": "^1.0",
+                "psr/simple-cache": "^1.0",
+                "symfony/cache": "^v5.0",
+                "vimeo/psalm": "^4.20"
+            },
+            "suggest": {
+                "league/uri": "To parse URL and validate host",
+                "psr/http-client-implementation": "To use the storage functionnality which depends on PSR-18",
+                "psr/http-factory-implementation": "To use the storage functionnality which depends on PSR-17",
+                "psr/simple-cache-implementation": "To use the storage functionnality which depends on PSR-16"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pdp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Kendall",
+                    "homepage": "http://about.me/jeremykendall",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "homepage": "http://nyamsprod.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/jeremykendall/php-domain-parser/graphs/contributors"
+                }
+            ],
+            "description": "Public Suffix List and IANA Root Zone Database based Domain parsing implemented in PHP.",
+            "homepage": "https://github.com/jeremykendall/php-domain-parser",
+            "keywords": [
+                "PSL",
+                "Public Suffix List",
+                "Top Level Domains",
+                "domain parsing",
+                "iana",
+                "icann",
+                "idn",
+                "tld"
+            ],
+            "support": {
+                "issues": "https://github.com/jeremykendall/php-domain-parser/issues",
+                "source": "https://github.com/jeremykendall/php-domain-parser"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-18T22:00:34+00:00"
+        },
+        {
             "name": "jslirola/flarum-ext-login2seeplus",
             "version": "v0.2",
             "source": {
@@ -7477,6 +7945,57 @@
             "time": "2021-12-09T09:40:50+00:00"
         },
         {
+            "name": "league/flysystem-aws-s3-v3",
+            "version": "1.0.29",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
+                "reference": "4e25cc0582a36a786c31115e419c6e40498f6972"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/4e25cc0582a36a786c31115e419c6e40498f6972",
+                "reference": "4e25cc0582a36a786c31115e419c6e40498f6972",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-sdk-php": "^3.20.0",
+                "league/flysystem": "^1.0.40",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "henrikbjorn/phpspec-code-coverage": "~1.0.1",
+                "phpspec/phpspec": "^2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Flysystem\\AwsS3v3\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frenky.net"
+                }
+            ],
+            "description": "Flysystem adapter for the AWS S3 SDK v3.x",
+            "support": {
+                "issues": "https://github.com/thephpleague/flysystem-aws-s3-v3/issues",
+                "source": "https://github.com/thephpleague/flysystem-aws-s3-v3/tree/1.0.29"
+            },
+            "time": "2020-10-08T18:58:37+00:00"
+        },
+        {
             "name": "league/mime-type-detection",
             "version": "1.9.0",
             "source": {
@@ -8046,31 +8565,42 @@
             "time": "2022-03-13T20:29:46+00:00"
         },
         {
-            "name": "myclabs/php-enum",
-            "version": "1.6.6",
+            "name": "mtdowling/jmespath.php",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/myclabs/php-enum.git",
-                "reference": "32c4202886c51fbe5cc3a7c34ec5c9a4a790345e"
+                "url": "https://github.com/jmespath/jmespath.php.git",
+                "reference": "9b87907a81b87bc76d19a7fb2d61e61486ee9edb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/32c4202886c51fbe5cc3a7c34ec5c9a4a790345e",
-                "reference": "32c4202886c51fbe5cc3a7c34ec5c9a4a790345e",
+                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/9b87907a81b87bc76d19a7fb2d61e61486ee9edb",
+                "reference": "9b87907a81b87bc76d19a7fb2d61e61486ee9edb",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*",
-                "php": ">=5.4"
+                "php": "^5.4 || ^7.0 || ^8.0",
+                "symfony/polyfill-mbstring": "^1.17"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35|^5.7|^6.0",
-                "squizlabs/php_codesniffer": "1.*"
+                "composer/xdebug-handler": "^1.4 || ^2.0",
+                "phpunit/phpunit": "^4.8.36 || ^7.5.15"
             },
+            "bin": [
+                "bin/jp.php"
+            ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
             "autoload": {
+                "files": [
+                    "src/JmesPath.php"
+                ],
                 "psr-4": {
-                    "MyCLabs\\Enum\\": "src/"
+                    "JmesPath\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -8079,20 +8609,21 @@
             ],
             "authors": [
                 {
-                    "name": "PHP Enum contributors",
-                    "homepage": "https://github.com/myclabs/php-enum/graphs/contributors"
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
                 }
             ],
-            "description": "PHP Enum implementation",
-            "homepage": "http://github.com/myclabs/php-enum",
+            "description": "Declaratively specify how to extract elements from a JSON document",
             "keywords": [
-                "enum"
+                "json",
+                "jsonpath"
             ],
             "support": {
-                "issues": "https://github.com/myclabs/php-enum/issues",
-                "source": "https://github.com/myclabs/php-enum/tree/master"
+                "issues": "https://github.com/jmespath/jmespath.php/issues",
+                "source": "https://github.com/jmespath/jmespath.php/tree/2.6.1"
             },
-            "time": "2019-02-04T21:18:49+00:00"
+            "time": "2021-06-14T00:11:39+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -8639,53 +9170,6 @@
             "time": "2022-01-27T09:35:39+00:00"
         },
         {
-            "name": "overtrue/flysystem-qiniu",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/overtrue/flysystem-qiniu.git",
-                "reference": "642731719ecba8826e095e2395e379c2a4910c80"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/flysystem-qiniu/zipball/642731719ecba8826e095e2395e379c2a4910c80",
-                "reference": "642731719ecba8826e095e2395e379c2a4910c80",
-                "shasum": ""
-            },
-            "require": {
-                "league/flysystem": "^1.0",
-                "php": ">=5.5.9",
-                "qiniu/php-sdk": "^7.2"
-            },
-            "require-dev": {
-                "mockery/mockery": "1.3.1",
-                "php": ">=5.6.0",
-                "phpunit/phpunit": "~8.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Overtrue\\Flysystem\\Qiniu\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "overtrue",
-                    "email": "i@overtrue.me"
-                }
-            ],
-            "description": "Flysystem adapter for the Qiniu storage.",
-            "support": {
-                "issues": "https://github.com/overtrue/flysystem-qiniu/issues",
-                "source": "https://github.com/overtrue/flysystem-qiniu/tree/master"
-            },
-            "time": "2020-02-21T10:46:56+00:00"
-        },
-        {
             "name": "php-http/discovery",
             "version": "1.14.1",
             "source": {
@@ -8877,6 +9361,66 @@
                 }
             ],
             "time": "2021-12-04T23:24:31+00:00"
+        },
+        {
+            "name": "pipecraft/flarum-ext-id-slug",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PipecraftNet/flarum-ext-id-slug.git",
+                "reference": "124805a6ce544bcb5d27383f6ea6ddbe250940f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PipecraftNet/flarum-ext-id-slug/zipball/124805a6ce544bcb5d27383f6ea6ddbe250940f9",
+                "reference": "124805a6ce544bcb5d27383f6ea6ddbe250940f9",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "ID Slug",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-info",
+                        "backgroundColor": "#000",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pipecraft\\IdSlug\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pipecraft",
+                    "email": "pipecraft.net@gmail.com"
+                }
+            ],
+            "description": "A Flarum extension. Use id as slug in discussion URL.",
+            "homepage": "https://github.com/PipecraftNet",
+            "keywords": [
+                "flarum",
+                "slug",
+                "slug-driver"
+            ],
+            "support": {
+                "issues": "https://github.com/PipecraftNet/flarum-ext-id-slug/issues",
+                "source": "https://github.com/PipecraftNet/flarum-ext-id-slug"
+            },
+            "time": "2021-09-07T16:45:57+00:00"
         },
         {
             "name": "psr/cache",
@@ -9447,63 +9991,6 @@
                 "source": "https://github.com/pusher/pusher-http-php/tree/master"
             },
             "time": "2017-06-06T16:41:17+00:00"
-        },
-        {
-            "name": "qiniu/php-sdk",
-            "version": "v7.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/qiniu/php-sdk.git",
-                "reference": "8414ee6b0027acc682469c7a2e7144f3ed2b7676"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/qiniu/php-sdk/zipball/8414ee6b0027acc682469c7a2e7144f3ed2b7676",
-                "reference": "8414ee6b0027acc682469c7a2e7144f3ed2b7676",
-                "shasum": ""
-            },
-            "require": {
-                "myclabs/php-enum": "1.6.6",
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "paragonie/random_compat": ">=2",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~3.6"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Qiniu/functions.php"
-                ],
-                "psr-4": {
-                    "Qiniu\\": "src/Qiniu"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Qiniu",
-                    "email": "sdk@qiniu.com",
-                    "homepage": "http://www.qiniu.com"
-                }
-            ],
-            "description": "Qiniu Resource (Cloud) Storage SDK for PHP",
-            "homepage": "http://developer.qiniu.com/",
-            "keywords": [
-                "cloud",
-                "qiniu",
-                "sdk",
-                "storage"
-            ],
-            "support": {
-                "issues": "https://github.com/qiniu/php-sdk/issues",
-                "source": "https://github.com/qiniu/php-sdk/tree/v7.4.2"
-            },
-            "time": "2022-03-02T04:10:03+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -10108,6 +10595,78 @@
             "time": "2021-01-18T09:41:32+00:00"
         },
         {
+            "name": "symfony/browser-kit",
+            "version": "v5.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/browser-kit.git",
+                "reference": "18e73179c6a33d520de1b644941eba108dd811ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/18e73179c6a33d520de1b644941eba108dd811ad",
+                "reference": "18e73179c6a33d520de1b644941eba108dd811ad",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/dom-crawler": "^4.4|^5.0|^6.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "require-dev": {
+                "symfony/css-selector": "^4.4|^5.0|^6.0",
+                "symfony/http-client": "^4.4|^5.0|^6.0",
+                "symfony/mime": "^4.4|^5.0|^6.0",
+                "symfony/process": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "symfony/process": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\BrowserKit\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Simulates the behavior of a web browser, allowing you to make requests, click on links and submit forms programmatically",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/browser-kit/tree/v5.4.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-02T09:53:40+00:00"
+        },
+        {
             "name": "symfony/config",
             "version": "v5.4.3",
             "source": {
@@ -10419,6 +10978,81 @@
             "time": "2021-07-12T14:48:14+00:00"
         },
         {
+            "name": "symfony/dom-crawler",
+            "version": "v5.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "c0bda97480d96337bd3866026159a8b358665457"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/c0bda97480d96337bd3866026159a8b358665457",
+                "reference": "c0bda97480d96337bd3866026159a8b358665457",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "conflict": {
+                "masterminds/html5": "<2.6"
+            },
+            "require-dev": {
+                "masterminds/html5": "^2.6",
+                "symfony/css-selector": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "symfony/css-selector": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Eases DOM navigation for HTML and XML documents",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/dom-crawler/tree/v5.4.6"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-03-02T12:42:23+00:00"
+        },
+        {
             "name": "symfony/event-dispatcher",
             "version": "v5.4.3",
             "source": {
@@ -10708,6 +11342,171 @@
                 }
             ],
             "time": "2022-01-26T16:34:36+00:00"
+        },
+        {
+            "name": "symfony/http-client",
+            "version": "v5.4.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client.git",
+                "reference": "fab84798694e45b4571d305125215699eb2b1f73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/fab84798694e45b4571d305125215699eb2b1f73",
+                "reference": "fab84798694e45b4571d305125215699eb2b1f73",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "psr/log": "^1|^2|^3",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/http-client-contracts": "^2.4",
+                "symfony/polyfill-php73": "^1.11",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/service-contracts": "^1.0|^2|^3"
+            },
+            "provide": {
+                "php-http/async-client-implementation": "*",
+                "php-http/client-implementation": "*",
+                "psr/http-client-implementation": "1.0",
+                "symfony/http-client-implementation": "2.4"
+            },
+            "require-dev": {
+                "amphp/amp": "^2.5",
+                "amphp/http-client": "^4.2.1",
+                "amphp/http-tunnel": "^1.0",
+                "amphp/socket": "^1.1",
+                "guzzlehttp/promises": "^1.4",
+                "nyholm/psr7": "^1.0",
+                "php-http/httplug": "^1.0|^2.0",
+                "psr/http-client": "^1.0",
+                "symfony/dependency-injection": "^4.4|^5.0|^6.0",
+                "symfony/http-kernel": "^4.4.13|^5.1.5|^6.0",
+                "symfony/process": "^4.4|^5.0|^6.0",
+                "symfony/stopwatch": "^4.4|^5.0|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\HttpClient\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides powerful methods to fetch HTTP resources synchronously or asynchronously",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/http-client/tree/v5.4.5"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-02-27T08:46:18+00:00"
+        },
+        {
+            "name": "symfony/http-client-contracts",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client-contracts.git",
+                "reference": "ec82e57b5b714dbb69300d348bd840b345e24166"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/ec82e57b5b714dbb69300d348bd840b345e24166",
+                "reference": "ec82e57b5b714dbb69300d348bd840b345e24166",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5"
+            },
+            "suggest": {
+                "symfony/http-client-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.5-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\HttpClient\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to HTTP clients",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/http-client-contracts/tree/v2.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-11-03T09:24:47+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -12696,6 +13495,71 @@
             "time": "2020-12-11T19:33:31+00:00"
         },
         {
+            "name": "zerosonesfun/elint",
+            "version": "3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zerosonesfun/elint.git",
+                "reference": "832ba7d6d0c6320a5c259668da90b0500e789691"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zerosonesfun/elint/zipball/832ba7d6d0c6320a5c259668da90b0500e789691",
+                "reference": "832ba7d6d0c6320a5c259668da90b0500e789691",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^0.1.0-beta.16 || ^1.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "External Links in New Tab (ELINT)",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-external-link-square-alt",
+                        "backgroundColor": "#ddd",
+                        "color": "#000"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ZerosOnesFun\\Elint\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Billy Wilcosky",
+                    "homepage": "https://www.wilcosky.com",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Opens external links, and only external links, in a new tab.",
+            "homepage": "https://www.wilcosky.com",
+            "keywords": [
+                "discussion",
+                "external",
+                "links"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/zerosonesfun/elint/issues",
+                "source": "https://github.com/zerosonesfun/elint"
+            },
+            "funding": [
+                {
+                    "url": "https://www.wilcosky.com",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-05-16T01:26:03+00:00"
+        },
+        {
             "name": "zerosonesfun/flarum-up",
             "version": "1.0",
             "source": {
@@ -12762,7 +13626,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ecnu-im/fancybox": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

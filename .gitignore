@@ -7,15 +7,6 @@
 !flarum
 !.gitignore
 
-!storage
-storage/*
-!storage/views
-
-!vendor
-vendor/*
-!vendor/acpl
-!vendor/fof
-
 !public
 public/.htaccess
 public/assets/avatars
