@@ -76,5 +76,9 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true
-    }
+    },
+    "repositories": [{
+        "type": "path",
+        "url": "packages/*"
+    }]
 }
