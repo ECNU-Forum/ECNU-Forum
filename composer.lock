@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a559bf8db6e3bf1d383a4835f87a8c1e",
+    "content-hash": "6eecca6f8065b8a439d2a04c5c477eea",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -7229,6 +7229,79 @@
                 "source": "https://github.com/jslirola/flarum-ext-login2seeplus"
             },
             "time": "2021-06-25T19:26:16+00:00"
+        },
+        {
+            "name": "justoverclock/og-meta-tag",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justoverclockl/og-meta-tag.git",
+                "reference": "870951511754014b09f35648552eff277d63b596"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justoverclockl/og-meta-tag/zipball/870951511754014b09f35648552eff277d63b596",
+                "reference": "870951511754014b09f35648552eff277d63b596",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Og Meta Tag",
+                    "category": "",
+                    "icon": {
+                        "name": "fas fa-code",
+                        "backgroundColor": "green",
+                        "color": "white"
+                    }
+                },
+                "flagrow": {
+                    "discuss": ""
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Justoverclock\\OgMetaTag\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Colia",
+                    "email": "info@flarum.it",
+                    "homepage": "https://flarum.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add Open Graph Meta Tag to Flarum",
+            "keywords": [
+                "meta tag",
+                "open graph"
+            ],
+            "support": {
+                "issues": "https://github.com/justoverclockl/og-meta-tag/issues",
+                "source": "https://github.com/justoverclockl/og-meta-tag/tree/0.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/donate?hosted_button_id=25WSH565TJCLE",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/justoverclockl",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-26T22:07:54+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
