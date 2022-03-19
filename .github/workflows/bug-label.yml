@@ -12,7 +12,7 @@ jobs:
       - name: Add bug label
         uses: actions-cool/issues-helper@v2
         with:
-          actions: 'add-labels'
+          actions: '#add-labels'
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
           labels: 'bug'
