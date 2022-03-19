@@ -67,6 +67,7 @@
         "ianm/html-head": "*",
         "ianm/synopsis": "^1.2",
         "jslirola/flarum-ext-login2seeplus": "^0.2.0",
+        "justoverclock/og-meta-tag": "*",
         "league/flysystem-aws-s3-v3": "1.*",
         "malago/flarum-ext-fancybox": "^0.3.0",
         "michaelbelgium/flarum-discussion-views": "^7.1",
