@@ -1,9 +1,10 @@
 name: 🐞 Bug
 description: 提交一个 Bug
-title: ""
+title: "<title>"
 labels: ["bug"]
 body:
 - type: checkboxes
+  id: issue
   attributes:
     label: 该问题是否已经存在对应 Issue？
     description: 请查阅 Issue 列表确认是否已经存在相关 Issue。
@@ -11,18 +12,21 @@ body:
     - label: 我已查阅现有 Issue 列表
       required: true
 - type: textarea
+  id: current
   attributes:
     label: 当前行为
     description: 简短地描述你当前遇到的问题。
   validations:
     required: true
 - type: textarea
+  id: expected
   attributes:
     label: 预期行为
     description: 简短地描述你期望的正确行为。
   validations:
     required: false
 - type: textarea
+  id: reprod
   attributes:
     label: 复现步骤
     description: 如何复现你遇到的问题。
@@ -71,6 +75,7 @@ body:
   validations:
     required: true
 - type: textarea
+  id: context
   attributes:
     label: 补充信息
     description: |
