@@ -1,6 +1,6 @@
 name: Feature Request
 description: 请求新增/优化功能
-title: "<title>"
+title: "[FEAT] "
 labels: ["enhancement"]
 body:
 - type: textarea
