@@ -1,6 +1,6 @@
 name: Bug
 description: 提交一个 Bug
-title: "<title>"
+title: "[BUG] "
 labels: ["bug"]
 body:
 - type: textarea
