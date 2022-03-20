@@ -1,3 +1,6 @@
 [submodule "packages/ecnu-im-fabcybox"]
 	path = packages/ecnu-im-fabcybox
 	url = https://github.com/ECNU-Forum/fancybox
+[submodule "packages/ecnu-im-topic-starter-label"]
+	path = packages/ecnu-im-topic-starter-label
+	url = https://github.com/ECNU-Forum/topic-starter-label.git
