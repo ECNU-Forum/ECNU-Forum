@@ -1,0 +1,81 @@
+name: 🐞 Bug
+description: 提交一个 Bug
+title: ""
+labels: ["bug"]
+body:
+- type: checkboxes
+  attributes:
+    label: 该问题是否已经存在对应 Issue？
+    description: 请查阅 Issue 列表确认是否已经存在相关 Issue。
+    options:
+    - label: 我已查阅现有 Issue 列表
+      required: true
+- type: textarea
+  attributes:
+    label: 当前行为
+    description: 简短地描述你当前遇到的问题。
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 预期行为
+    description: 简短地描述你期望的正确行为。
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: 复现步骤
+    description: 如何复现你遇到的问题。
+    placeholder: |
+      1. 前往 ... 页面
+      2. 点击 ...
+      3. 滚动到 ...
+      4. 出现 ... 错误
+  validations:
+    required: false
+- type: dropdown
+  id: platform
+  attributes:
+    label: 平台信息
+    multiple: true
+    options:
+      - PC
+      - Android
+      - iOS
+      - 其他
+  validations:
+    required: true
+- type: dropdown
+  id: browser
+  attributes:
+    label: 浏览器信息
+    multiple: true
+    options:
+      - Chrome
+      - Firefox
+      - Safari
+      - Edge
+      - 其他
+  validations:
+    required: true
+- type: dropdown
+  id: user
+  attributes:
+    label: 用户状态信息
+    multiple: true
+    options:
+      - 未登录
+      - 普通用户
+      - 版主
+      - 管理员
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 补充信息
+    description: |
+      链接、截图等等任何可能有帮助的补充信息。
+      
+      你可以点击该区域并拖动文件到此处来上传图片或日志。
+  validations:
+    required: false
