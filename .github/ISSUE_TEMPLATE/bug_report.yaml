@@ -1,4 +1,4 @@
-name: 🐞 Bug
+name: Bug
 description: 提交一个 Bug
 title: "<title>"
 labels: ["bug"]
