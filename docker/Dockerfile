@@ -23,6 +23,6 @@ RUN git submodule update --init --recursive
 COPY composer.json composer.json
 # COPY composer.lock composer.lock
 
-RUN composer install
+RUN composer install --ignore-platform-req=ext-simplexml
 
 EXPOSE 8888
