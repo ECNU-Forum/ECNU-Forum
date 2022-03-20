@@ -3,8 +3,7 @@ config.php
 storage
 vendor
 public/.htaccess
-public/assets/avatars
-public/assets/files
+public/assets
 
 !docker*
 !.env

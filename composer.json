@@ -60,7 +60,6 @@
         "fof/polls": "^1.0",
         "fof/reactions": "*",
         "fof/recaptcha": "^1.0",
-        "fof/secure-https": "*",
         "fof/terms": "^1.1",
         "fof/upload": "^1.1",
         "fof/user-bio": "*",
