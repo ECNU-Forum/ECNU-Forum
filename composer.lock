@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6eecca6f8065b8a439d2a04c5c477eea",
+    "content-hash": "7b0a88462547e59b313a6a71584acc77",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -2239,6 +2239,51 @@
                 "source": "https://github.com/ECNU-Forum/fancybox",
                 "forum": "https://discuss.flarum.org/d/29102"
             },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "ecnu-im/topic-starter-label",
+            "version": "dev-fd69bb039e0885154b653b4c944f9844c2a6baf5",
+            "dist": {
+                "type": "path",
+                "url": "packages/ecnu-im-topic-starter-label",
+                "reference": "2cddd0067c9f4ebad1d42e471a16d48ac8648f9a"
+            },
+            "require": {
+                "flarum/core": "^1.2"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Topic Starter Label",
+                    "category": "discussion",
+                    "icon": {
+                        "name": "fas fa-crown",
+                        "backgroundColor": "#2B6205",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dem13n\\Topic\\Starter\\Label\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dem13n",
+                    "email": "idem13n@gmail.com"
+                }
+            ],
+            "description": "Adds a label to the discussion author",
+            "keywords": [
+                "discussion"
+            ],
             "transport-options": {
                 "relative": true
             }
@@ -13766,7 +13811,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ecnu-im/fancybox": 20
+        "ecnu-im/fancybox": 20,
+        "ecnu-im/topic-starter-label": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
