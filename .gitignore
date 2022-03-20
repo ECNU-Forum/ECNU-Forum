@@ -1,11 +1,6 @@
-config.php
 .editorconfig
 storage
 vendor
-public/.htaccess
 public/assets/avatars
 public/assets/files
-
-!docker*
-!.env
-!build-docker.sh
+mysql/db/data
