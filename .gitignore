@@ -1,10 +1,10 @@
-config.php
 .editorconfig
 storage
 vendor
 public/.htaccess
 public/assets
 
-!docker*
-!.env
-!build-docker.sh
+mysql/db/data
+
+# extensions cache for docker
+extensions/.cache
