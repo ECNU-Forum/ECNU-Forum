@@ -14,8 +14,10 @@ COPY site.php site.php
 
 # composer file
 COPY extensions extensions
+COPY patches patches
 COPY composer.json composer.json
 COPY composer.lock composer.lock
 
+RUN apk add --no-cache patch
 RUN sed -i '/cd \/flarum\/app/a\COMPOSER_CACHE_DIR=${CACHE_DIR} su-exec ${UID}:${GID} composer install' /usr/local/bin/startup
 EXPOSE 8888

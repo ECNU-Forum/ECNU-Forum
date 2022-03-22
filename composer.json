@@ -28,6 +28,7 @@
         "clarkwinkelmann/flarum-ext-circle-groups": "^1.0",
         "clarkwinkelmann/flarum-ext-emojionearea": "^1.0",
         "clarkwinkelmann/flarum-ext-likes-received": "^1.0",
+        "cweagans/composer-patches": "^1.7",
         "datlechin/flarum-link-preview": "v0.2.1",
         "ecnu-im/fancybox": "@dev",
         "ecnu-im/topic-starter-label": "@dev",
@@ -85,5 +86,9 @@
     "repositories": [{
         "type": "path",
         "url": "packages/*"
-    }]
+    }],
+    "extra": {
+        "patches-file": "patches/composer.patches.json",
+        "composer-exit-on-patch-failure": true
+    }
 }
