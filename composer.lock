@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b57b9e45c387c4b0e4286cc29ee01d4",
+    "content-hash": "dfb504755a1a45b985e8b9e46f56da74",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -7207,6 +7207,69 @@
                 "source": "https://github.com/jslirola/flarum-ext-login2seeplus"
             },
             "time": "2021-06-25T19:26:16+00:00"
+        },
+        {
+            "name": "justoverclock/hot-discussions",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justoverclockl/hot-discussions.git",
+                "reference": "28719b075ef62d7904d16f44dd676cee6acd7341"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justoverclockl/hot-discussions/zipball/28719b075ef62d7904d16f44dd676cee6acd7341",
+                "reference": "28719b075ef62d7904d16f44dd676cee6acd7341",
+                "shasum": ""
+            },
+            "require": {
+                "afrux/forum-widgets-core": "^0.1.0",
+                "flarum/core": "^1.0.0"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Hot Discussions",
+                    "category": "",
+                    "icon": {
+                        "name": "fab fa-hotjar",
+                        "backgroundColor": "red",
+                        "color": "white"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Justoverclock\\HotDiscussions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Colia",
+                    "email": "info@flarum.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Hot Discussions widget for Flarum",
+            "keywords": [
+                "afrux",
+                "flarum",
+                "hot discussions",
+                "popular discussions",
+                "widget"
+            ],
+            "support": {
+                "issues": "https://github.com/justoverclockl/hot-discussions/issues",
+                "source": "https://github.com/justoverclockl/hot-discussions/tree/0.1.2"
+            },
+            "time": "2021-09-20T14:03:10+00:00"
         },
         {
             "name": "justoverclock/og-meta-tag",
