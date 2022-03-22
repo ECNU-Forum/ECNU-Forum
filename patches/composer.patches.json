@@ -1,0 +1,7 @@
+{
+    "patches": {
+        "michaelbelgium/flarum-discussion-views": {
+            "fix-night-mode" : "patches/flarum-discussion-views/fix-night-mode.patch"
+        }
+    }
+}
