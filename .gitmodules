@@ -1,3 +1,6 @@
 [submodule "packages/ecnu-im-fabcybox"]
 	path = packages/ecnu-im-fabcybox
 	url = https://github.com/ECNU-Forum/fancybox
+[submodule "packages/ecnu-im-flarum-link-preview"]
+	path = packages/ecnu-im-flarum-link-preview
+	url = https://github.com/ECNU-Forum/flarum-link-preview
