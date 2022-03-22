@@ -1,0 +1,31 @@
+name: Feature Request
+description: 请求新增/优化功能
+title: "[FEAT] "
+labels: ["enhancement"]
+body:
+- type: textarea
+  id: current
+  attributes:
+    label: 场景描述
+    description: 简短地描述你遇到的场景和问题。
+    placeholder: |
+      我感觉在 [...] 时的体验不够好，因为 [...]
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: 预期解决方案
+    description: 简短地描述你期望的解决方案和达到的效果。
+  validations:
+    required: true
+- type: textarea
+  id: context
+  attributes:
+    label: 补充信息
+    description: |
+      链接、截图等等任何可能有帮助的补充信息。
+      
+      你可以点击该区域并拖动文件到此处来上传图片或日志。
+  validations:
+    required: false

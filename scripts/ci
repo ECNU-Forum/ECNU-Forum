@@ -1,0 +1,11 @@
+#!/bin/bash -e
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+cd $(dirname "$SCRIPT_DIR")
+
+docker-compose down || true
+
+rm -rvf mysql/db/data
+rm -rvf storage/logs
+rm -rvf public/assets
+
+exec scripts/build-docker $@

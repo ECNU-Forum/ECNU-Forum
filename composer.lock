@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6eecca6f8065b8a439d2a04c5c477eea",
+    "content-hash": "aba62aba4f42ae44681a2052cbe1eb63",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -1293,6 +1293,54 @@
             "time": "2022-03-16T11:22:07+00:00"
         },
         {
+            "name": "cweagans/composer-patches",
+            "version": "1.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "e9969cfc0796e6dea9b4e52f77f18e1065212871"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/e9969cfc0796e6dea9b4e52f77f18e1065212871",
+                "reference": "e9969cfc0796e6dea9b4e52f77f18e1065212871",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0 || ~2.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "support": {
+                "issues": "https://github.com/cweagans/composer-patches/issues",
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.2"
+            },
+            "time": "2022-01-25T19:21:20+00:00"
+        },
+        {
             "name": "datlechin/flarum-link-preview",
             "version": "v0.2.1",
             "source": {
@@ -2188,7 +2236,7 @@
         },
         {
             "name": "ecnu-im/fancybox",
-            "version": "dev-99cfb1ca99388692cb48907080bde5c88f9a54dc",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "packages/ecnu-im-fabcybox",
@@ -2239,6 +2287,51 @@
                 "source": "https://github.com/ECNU-Forum/fancybox",
                 "forum": "https://discuss.flarum.org/d/29102"
             },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "ecnu-im/topic-starter-label",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/ecnu-im-topic-starter-label",
+                "reference": "2cddd0067c9f4ebad1d42e471a16d48ac8648f9a"
+            },
+            "require": {
+                "flarum/core": "^1.2"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Topic Starter Label",
+                    "category": "discussion",
+                    "icon": {
+                        "name": "fas fa-crown",
+                        "backgroundColor": "#2B6205",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dem13n\\Topic\\Starter\\Label\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dem13n",
+                    "email": "idem13n@gmail.com"
+                }
+            ],
+            "description": "Adds a label to the discussion author",
+            "keywords": [
+                "discussion"
+            ],
             "transport-options": {
                 "relative": true
             }
@@ -4919,73 +5012,6 @@
             "time": "2021-06-03T19:56:41+00:00"
         },
         {
-            "name": "fof/secure-https",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfFlarum/secure-https.git",
-                "reference": "ed6b337c308a003d315165f4c92ffc9fff38543c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfFlarum/secure-https/zipball/ed6b337c308a003d315165f4c92ffc9fff38543c",
-                "reference": "ed6b337c308a003d315165f4c92ffc9fff38543c",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.0.0",
-                "guzzlehttp/guzzle": "^7.0"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "FoF Secure HTTPS",
-                    "category": "feature",
-                    "icon": {
-                        "name": "fas fa-lock",
-                        "backgroundColor": "#e74c3c",
-                        "color": "#fff"
-                    }
-                },
-                "flagrow": {
-                    "discuss": "https://discuss.flarum.org/d/17771"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "FoF\\SecureHttps\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "David Sevilla Martín",
-                    "email": "david.s@redevs.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Changes all images using http to https",
-            "homepage": "https://friendsofflarum.org",
-            "keywords": [
-                "flarum"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/17771",
-                "issues": "https://github.com/FriendsOfFlarum/secure-https/issues",
-                "source": "https://github.com/FriendsOfFlarum/secure-https"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/fof/donate",
-                    "type": "website"
-                }
-            ],
-            "time": "2021-11-26T01:28:02+00:00"
-        },
-        {
             "name": "fof/terms",
             "version": "1.1.2",
             "source": {
@@ -7229,6 +7255,69 @@
                 "source": "https://github.com/jslirola/flarum-ext-login2seeplus"
             },
             "time": "2021-06-25T19:26:16+00:00"
+        },
+        {
+            "name": "justoverclock/hot-discussions",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justoverclockl/hot-discussions.git",
+                "reference": "28719b075ef62d7904d16f44dd676cee6acd7341"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justoverclockl/hot-discussions/zipball/28719b075ef62d7904d16f44dd676cee6acd7341",
+                "reference": "28719b075ef62d7904d16f44dd676cee6acd7341",
+                "shasum": ""
+            },
+            "require": {
+                "afrux/forum-widgets-core": "^0.1.0",
+                "flarum/core": "^1.0.0"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Hot Discussions",
+                    "category": "",
+                    "icon": {
+                        "name": "fab fa-hotjar",
+                        "backgroundColor": "red",
+                        "color": "white"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Justoverclock\\HotDiscussions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Colia",
+                    "email": "info@flarum.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Hot Discussions widget for Flarum",
+            "keywords": [
+                "afrux",
+                "flarum",
+                "hot discussions",
+                "popular discussions",
+                "widget"
+            ],
+            "support": {
+                "issues": "https://github.com/justoverclockl/hot-discussions/issues",
+                "source": "https://github.com/justoverclockl/hot-discussions/tree/0.1.2"
+            },
+            "time": "2021-09-20T14:03:10+00:00"
         },
         {
             "name": "justoverclock/og-meta-tag",
@@ -13766,7 +13855,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ecnu-im/fancybox": 20
+        "ecnu-im/fancybox": 20,
+        "ecnu-im/topic-starter-label": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

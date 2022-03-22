@@ -1,0 +1,18 @@
+name: Add Labels
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-labels:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.title, '问题') == true
+    steps:
+      - name: Add bug label
+        uses: actions-cool/issues-helper@v2
+        with:
+          actions: '#add-labels'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          labels: 'bug'

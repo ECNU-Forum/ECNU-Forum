@@ -28,8 +28,11 @@
         "clarkwinkelmann/flarum-ext-circle-groups": "^1.0",
         "clarkwinkelmann/flarum-ext-emojionearea": "^1.0",
         "clarkwinkelmann/flarum-ext-likes-received": "^1.0",
-        "ecnu-im/fancybox": "@dev",
         "ecnu.im/flarum-link-preview": "@dev",
+        "cweagans/composer-patches": "^1.7",
+        "datlechin/flarum-link-preview": "v0.2.1",
+        "ecnu-im/fancybox": "@dev",
+        "ecnu-im/topic-starter-label": "@dev",
         "extiverse/mercury": "*",
         "flarum-lang/chinese-simplified": "v1.1.1.1220",
         "flarum/approval": "*",
@@ -59,7 +62,6 @@
         "fof/polls": "^1.0",
         "fof/reactions": "*",
         "fof/recaptcha": "^1.0",
-        "fof/secure-https": "*",
         "fof/terms": "^1.1",
         "fof/upload": "^1.1",
         "fof/user-bio": "*",
@@ -67,6 +69,7 @@
         "ianm/html-head": "*",
         "ianm/synopsis": "^1.2",
         "jslirola/flarum-ext-login2seeplus": "^0.2.0",
+        "justoverclock/hot-discussions": "*",
         "justoverclock/og-meta-tag": "*",
         "league/flysystem-aws-s3-v3": "1.*",
         "malago/flarum-ext-fancybox": "^0.3.0",
@@ -85,5 +88,9 @@
     "repositories": [{
         "type": "path",
         "url": "packages/*"
-    }]
+    }],
+    "extra": {
+        "patches-file": "patches/composer.patches.json",
+        "composer-exit-on-patch-failure": true
+    }
 }

@@ -3,9 +3,9 @@ config.php
 storage
 vendor
 public/.htaccess
-public/assets/avatars
-public/assets/files
+public/assets
 
-!docker*
-!.env
-!build-docker.sh
+mysql/db/data
+
+# extensions cache for docker
+extensions/.cache
