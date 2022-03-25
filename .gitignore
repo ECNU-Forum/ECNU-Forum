@@ -1,5 +1,6 @@
 config.php
 .editorconfig
+*.sql
 storage
 vendor
 public/.htaccess

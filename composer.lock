@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e12a3eb91b5d4479adb4eaaa66f7c93",
+    "content-hash": "c38bbcd2ecfe2014e7880f439bae847d",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -397,16 +397,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.216.0",
+            "version": "3.216.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "e283b3210fcef6a60e686a68b92c4e81d34bb021"
+                "reference": "00176c97319448c9520176d7c7d107b04b35406d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e283b3210fcef6a60e686a68b92c4e81d34bb021",
-                "reference": "e283b3210fcef6a60e686a68b92c4e81d34bb021",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/00176c97319448c9520176d7c7d107b04b35406d",
+                "reference": "00176c97319448c9520176d7c7d107b04b35406d",
                 "shasum": ""
             },
             "require": {
@@ -482,9 +482,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.216.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.216.1"
             },
-            "time": "2022-03-23T18:16:07+00:00"
+            "time": "2022-03-24T18:15:20+00:00"
         },
         {
             "name": "axy/backtrace",
@@ -2154,6 +2154,56 @@
                 }
             ],
             "time": "2022-01-18T15:43:28+00:00"
+        },
+        {
+            "name": "ecnu-forum/flarum-ext-chinese-search-mariadb",
+            "version": "0.1.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/flarum-ext-chinese-search-mariadb",
+                "reference": "a2662142506b674b0fdb8eaeb1d02f1bf1d0fc15"
+            },
+            "require": {
+                "flarum/core": ">=1.2"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Chinese Search Mariadb",
+                    "icon": {
+                        "name": "fa fa-search",
+                        "backgroundColor": "#ddd",
+                        "color": "#444"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ECNUForum\\Search\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jacklightChen",
+                    "email": "chenzh@stu.ecnu.edu.cn",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Support flarum-mariadb chinese search",
+            "keywords": [
+                "flarum",
+                "search"
+            ],
+            "support": {
+                "issues": "https://github.com/ECNU-Forum/flarum-ext-chinese-search-mariadb/issues",
+                "source": "https://github.com/ECNU-Forum/flarum-ext-chinese-search-mariadb"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "ecnu-im/fancybox",

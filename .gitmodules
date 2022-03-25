@@ -7,3 +7,6 @@
 [submodule "packages/ecnu-im-topic-starter-label"]
 	path = packages/ecnu-im-topic-starter-label
 	url = https://github.com/ECNU-Forum/topic-starter-label.git
+[submodule "packages/flarum-ext-chinese-search-mariadb"]
+	path = packages/flarum-ext-chinese-search-mariadb
+	url = https://github.com/ECNU-Forum/flarum-ext-chinese-search-mariadb.git

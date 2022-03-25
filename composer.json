@@ -29,6 +29,7 @@
         "clarkwinkelmann/flarum-ext-emojionearea": "^1.0",
         "clarkwinkelmann/flarum-ext-likes-received": "^1.0",
         "cweagans/composer-patches": "^1.7",
+        "ecnu-forum/flarum-ext-chinese-search-mariadb": "^0.1.0",
         "ecnu-im/fancybox": "@dev",
         "ecnu-im/flarum-link-preview": "@dev",
         "ecnu-im/topic-starter-label": "@dev",
