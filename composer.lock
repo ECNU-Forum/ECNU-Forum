@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aba62aba4f42ae44681a2052cbe1eb63",
+    "content-hash": "1e12a3eb91b5d4479adb4eaaa66f7c93",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -397,16 +397,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.214.0",
+            "version": "3.216.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a2eacf8c1b55de4733f4cfc315da38f1d4c66501"
+                "reference": "e283b3210fcef6a60e686a68b92c4e81d34bb021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a2eacf8c1b55de4733f4cfc315da38f1d4c66501",
-                "reference": "a2eacf8c1b55de4733f4cfc315da38f1d4c66501",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e283b3210fcef6a60e686a68b92c4e81d34bb021",
+                "reference": "e283b3210fcef6a60e686a68b92c4e81d34bb021",
                 "shasum": ""
             },
             "require": {
@@ -482,9 +482,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.214.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.216.0"
             },
-            "time": "2022-03-16T19:00:00+00:00"
+            "time": "2022-03-23T18:16:07+00:00"
         },
         {
             "name": "axy/backtrace",
@@ -1000,20 +1000,20 @@
         },
         {
             "name": "clarkwinkelmann/flarum-ext-circle-groups",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/clarkwinkelmann/flarum-ext-circle-groups.git",
-                "reference": "f5c17aa696ef906f05e8b0fbe6d369f20e56ecb3"
+                "reference": "6c9b752f5d61fae4087d2c7bd08ff14aca9e2293"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clarkwinkelmann/flarum-ext-circle-groups/zipball/f5c17aa696ef906f05e8b0fbe6d369f20e56ecb3",
-                "reference": "f5c17aa696ef906f05e8b0fbe6d369f20e56ecb3",
+                "url": "https://api.github.com/repos/clarkwinkelmann/flarum-ext-circle-groups/zipball/6c9b752f5d61fae4087d2c7bd08ff14aca9e2293",
+                "reference": "6c9b752f5d61fae4087d2c7bd08ff14aca9e2293",
                 "shasum": ""
             },
             "require": {
-                "flarum/core": "^1.0"
+                "flarum/core": "^1.2"
             },
             "type": "flarum-extension",
             "extra": {
@@ -1053,7 +1053,7 @@
                 "issues": "https://github.com/clarkwinkelmann/flarum-ext-circle-groups/issues",
                 "source": "https://github.com/clarkwinkelmann/flarum-ext-circle-groups"
             },
-            "time": "2021-05-28T14:58:13+00:00"
+            "time": "2022-03-20T18:00:35+00:00"
         },
         {
             "name": "clarkwinkelmann/flarum-ext-emojionearea",
@@ -1339,85 +1339,6 @@
                 "source": "https://github.com/cweagans/composer-patches/tree/1.7.2"
             },
             "time": "2022-01-25T19:21:20+00:00"
-        },
-        {
-            "name": "datlechin/flarum-link-preview",
-            "version": "v0.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/datlechin/flarum-link-preview.git",
-                "reference": "b9bc834d5b0087d48ca8a567e557554dd20447ab"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/datlechin/flarum-link-preview/zipball/b9bc834d5b0087d48ca8a567e557554dd20447ab",
-                "reference": "b9bc834d5b0087d48ca8a567e557554dd20447ab",
-                "shasum": ""
-            },
-            "require": {
-                "datlechin/phpscraper": "^0.5.3",
-                "flarum/core": "^1.2"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "Link Preview",
-                    "category": "feature",
-                    "icon": {
-                        "name": "fas fa-eye",
-                        "color": "#fff",
-                        "backgroundColor": "#D3241C"
-                    }
-                },
-                "flarum-cli": {
-                    "modules": {
-                        "admin": true,
-                        "forum": true,
-                        "js": true,
-                        "jsCommon": false,
-                        "css": true,
-                        "locale": true,
-                        "gitConf": true,
-                        "githubActions": true,
-                        "prettier": true,
-                        "typescript": false,
-                        "bundlewatch": false,
-                        "backendTesting": false,
-                        "editorConfig": true,
-                        "styleci": true
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Datlechin\\LinkPreview\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ngo Quoc Dat",
-                    "email": "datlechin@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Automatically display a rich preview of the link contents.",
-            "homepage": "https://ngoquocdat.com",
-            "keywords": [
-                "flarum",
-                "flarum-extension",
-                "link preview",
-                "preview"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/30011",
-                "issues": "https://github.com/datlechin/flarum-link-preview/issues",
-                "source": "https://github.com/datlechin/flarum-birthdays"
-            },
-            "time": "2022-02-14T03:55:42+00:00"
         },
         {
             "name": "datlechin/phpscraper",
@@ -2236,7 +2157,7 @@
         },
         {
             "name": "ecnu-im/fancybox",
-            "version": "dev-main",
+            "version": "dev-99cfb1ca99388692cb48907080bde5c88f9a54dc",
             "dist": {
                 "type": "path",
                 "url": "packages/ecnu-im-fabcybox",
@@ -2292,8 +2213,90 @@
             }
         },
         {
+            "name": "ecnu-im/flarum-link-preview",
+            "version": "dev-56917c8eb0daf5c195f60aba471a2545f91dcf01",
+            "dist": {
+                "type": "path",
+                "url": "packages/ecnu-im-flarum-link-preview",
+                "reference": "8980bf25b3447b71e4c0a55651fe828a5d14bdfe"
+            },
+            "require": {
+                "datlechin/phpscraper": "^0.5.3",
+                "flarum/core": "^1.2",
+                "guzzlehttp/guzzle": "^7.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Link Preview",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-eye",
+                        "color": "#fff",
+                        "backgroundColor": "#D3241C"
+                    }
+                },
+                "flarum-cli": {
+                    "modules": {
+                        "admin": true,
+                        "forum": true,
+                        "js": true,
+                        "jsCommon": false,
+                        "css": true,
+                        "locale": true,
+                        "gitConf": true,
+                        "githubActions": true,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "backendTesting": false,
+                        "editorConfig": true,
+                        "styleci": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Datlechin\\LinkPreview\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ngo Quoc Dat",
+                    "email": "datlechin@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "jjaychen",
+                    "email": "jjaychen1e@gmail.com"
+                },
+                {
+                    "name": "cubercsl",
+                    "email": "hi@cubercsl.site"
+                }
+            ],
+            "description": "Automatically display a rich preview of the link contents.",
+            "homepage": "https://ngoquocdat.com",
+            "keywords": [
+                "flarum",
+                "flarum-extension",
+                "link preview",
+                "preview"
+            ],
+            "support": {
+                "source": "https://github.com/ecnu-im/flarum-link-preview",
+                "forum": "https://discuss.flarum.org/d/30011"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "ecnu-im/topic-starter-label",
-            "version": "dev-main",
+            "version": "dev-2bb8dfbf59d65ea9da77b175dcc09f77632039b8",
             "dist": {
                 "type": "path",
                 "url": "packages/ecnu-im-topic-starter-label",
@@ -4624,16 +4627,16 @@
         },
         {
             "name": "fof/nightmode",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfFlarum/nightmode.git",
-                "reference": "1cce7a466cb121ca3946d8d26d75413237e9f926"
+                "reference": "9061023270efa7ef8812ad820299786ed4c92111"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfFlarum/nightmode/zipball/1cce7a466cb121ca3946d8d26d75413237e9f926",
-                "reference": "1cce7a466cb121ca3946d8d26d75413237e9f926",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/nightmode/zipball/9061023270efa7ef8812ad820299786ed4c92111",
+                "reference": "9061023270efa7ef8812ad820299786ed4c92111",
                 "shasum": ""
             },
             "require": {
@@ -4705,7 +4708,7 @@
                     "type": "website"
                 }
             ],
-            "time": "2022-01-31T11:53:00+00:00"
+            "time": "2022-03-20T21:25:40+00:00"
         },
         {
             "name": "fof/pages",
@@ -5401,16 +5404,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.4.1",
+            "version": "7.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79"
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ac1ec1cd9b5624694c3a40be801d94137afb12b4",
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4",
                 "shasum": ""
             },
             "require": {
@@ -5505,7 +5508,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.4.1"
+                "source": "https://github.com/guzzle/guzzle/tree/7.4.2"
             },
             "funding": [
                 {
@@ -5521,7 +5524,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-06T18:43:05+00:00"
+            "time": "2022-03-20T14:16:28+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -5609,16 +5612,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72"
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c94a94f120803a18554c1805ef2e539f8285f9a2",
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2",
                 "shasum": ""
             },
             "require": {
@@ -5642,7 +5645,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -5704,7 +5707,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.1.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.2.1"
             },
             "funding": [
                 {
@@ -5720,7 +5723,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-06T17:43:30+00:00"
+            "time": "2022-03-20T21:55:58+00:00"
         },
         {
             "name": "ianm/html-head",
@@ -5856,7 +5859,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -5909,7 +5912,7 @@
         },
         {
             "name": "illuminate/cache",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cache.git",
@@ -5969,7 +5972,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -6023,7 +6026,7 @@
         },
         {
             "name": "illuminate/config",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/config.git",
@@ -6071,7 +6074,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -6131,7 +6134,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -6182,7 +6185,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -6230,7 +6233,7 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
@@ -6298,7 +6301,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -6353,7 +6356,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -6415,7 +6418,7 @@
         },
         {
             "name": "illuminate/hashing",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/hashing.git",
@@ -6463,7 +6466,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -6509,7 +6512,7 @@
         },
         {
             "name": "illuminate/mail",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/mail.git",
@@ -6570,7 +6573,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -6618,7 +6621,7 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
@@ -6684,7 +6687,7 @@
         },
         {
             "name": "illuminate/session",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/session.git",
@@ -6740,7 +6743,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -6808,7 +6811,7 @@
         },
         {
             "name": "illuminate/translation",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/translation.git",
@@ -6860,7 +6863,7 @@
         },
         {
             "name": "illuminate/validation",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/validation.git",
@@ -6920,7 +6923,7 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v8.83.4",
+            "version": "v8.83.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -13856,6 +13859,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "ecnu-im/fancybox": 20,
+        "ecnu-im/flarum-link-preview": 20,
         "ecnu-im/topic-starter-label": 20
     },
     "prefer-stable": false,
