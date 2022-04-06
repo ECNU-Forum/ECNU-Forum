@@ -7,5 +7,11 @@ docker-compose down || true
 rm -rvf mysql/db/data
 rm -rvf storage/logs
 rm -rvf public/assets
+rm -rvf extensions
+
+mkdir -p mysql/db/data
+mkdir -p storage/logs
+mkdir -p public/assets
+mkdir -p extensions
 
 exec scripts/build-docker $@
