@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c38bbcd2ecfe2014e7880f439bae847d",
+    "content-hash": "460f48e07c45e5377ce8f7ed3dc1c810",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -227,6 +227,79 @@
             "time": "2022-03-03T19:50:55+00:00"
         },
         {
+            "name": "afrux/news-widget",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afrux/news-widget.git",
+                "reference": "f1e813322ed624dd8edb2f437b9ce441ba314a55"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/afrux/news-widget/zipball/f1e813322ed624dd8edb2f437b9ce441ba314a55",
+                "reference": "f1e813322ed624dd8edb2f437b9ce441ba314a55",
+                "shasum": ""
+            },
+            "require": {
+                "afrux/forum-widgets-core": "^0.1.0",
+                "flarum/core": "^1.0.0"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                },
+                "flarum-extension": {
+                    "title": "News Widget",
+                    "category": "forum-widget",
+                    "icon": {
+                        "name": "fas fa-bullhorn",
+                        "backgroundColor": "#e34b6e",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Afrux\\News\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sami Mazouz",
+                    "email": "sychocouldy@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple news fader widget",
+            "homepage": "https://afrux.github.io",
+            "keywords": [
+                "flarum",
+                "forum",
+                "news",
+                "widget"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/",
+                "issues": "https://github.com/afrux/news-widget/issues",
+                "source": "https://github.com/afrux/news-widget"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/sycho",
+                    "type": "other"
+                }
+            ],
+            "time": "2021-12-11T19:18:08+00:00"
+        },
+        {
             "name": "askvortsov/flarum-auto-moderator",
             "version": "v0.1.2",
             "source": {
@@ -397,16 +470,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.216.1",
+            "version": "3.216.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "00176c97319448c9520176d7c7d107b04b35406d"
+                "reference": "9e09386c3a5b313eeb324490beff4eb843ed339d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/00176c97319448c9520176d7c7d107b04b35406d",
-                "reference": "00176c97319448c9520176d7c7d107b04b35406d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9e09386c3a5b313eeb324490beff4eb843ed339d",
+                "reference": "9e09386c3a5b313eeb324490beff4eb843ed339d",
                 "shasum": ""
             },
             "require": {
@@ -482,9 +555,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.216.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.216.2"
             },
-            "time": "2022-03-24T18:15:20+00:00"
+            "time": "2022-03-25T18:17:03+00:00"
         },
         {
             "name": "axy/backtrace",
@@ -2264,7 +2337,7 @@
         },
         {
             "name": "ecnu-im/flarum-link-preview",
-            "version": "dev-56917c8eb0daf5c195f60aba471a2545f91dcf01",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "packages/ecnu-im-flarum-link-preview",
@@ -4389,6 +4462,77 @@
                 }
             ],
             "time": "2021-05-21T23:38:23+00:00"
+        },
+        {
+            "name": "fof/follow-tags",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/follow-tags.git",
+                "reference": "8b4150c018da82c607e995b9c73b4369c9b0c1dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/follow-tags/zipball/8b4150c018da82c607e995b9c73b4369c9b0c1dd",
+                "reference": "8b4150c018da82c607e995b9c73b4369c9b0c1dd",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0",
+                "flarum/tags": "^1.2.0",
+                "fof/extend": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Follow Tags",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-user-tag",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    },
+                    "optional-dependencies": [
+                        "flarum/subscriptions"
+                    ]
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20525"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\FollowTags\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Follow tags and be notified of new discussions and replies",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20525",
+                "issues": "https://github.com/FriendsOfFlarum/follow-tags/issues",
+                "source": "https://github.com/FriendsOfFlarum/follow-tags"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2022-02-15T15:23:33+00:00"
         },
         {
             "name": "fof/formatting",
@@ -13774,6 +13918,63 @@
                 "source": "https://github.com/wikimedia/less.php/tree/v3.1.0"
             },
             "time": "2020-12-11T19:33:31+00:00"
+        },
+        {
+            "name": "yannisme/confixtheme",
+            "version": "2.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yannisme/flarum-confix-theme.git",
+                "reference": "0750cd0eef22b6ef849c34ad24ac6407e47452d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yannisme/flarum-confix-theme/zipball/0750cd0eef22b6ef849c34ad24ac6407e47452d8",
+                "reference": "0750cd0eef22b6ef849c34ad24ac6407e47452d8",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Confix",
+                    "category": "theme",
+                    "icon": {
+                        "name": "fab fa-yandex-international",
+                        "backgroundColor": "#F783AC",
+                        "color": "#FFF"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yannisme\\ConfixTheme\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "yannis",
+                    "email": "rd@yannis.cn",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Confix Theme For Flarum",
+            "homepage": "https://yannisme.com",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/27987-confix-theme",
+                "issues": "https://github.com/yannisme/flarum-confix-theme/issues",
+                "source": "https://github.com/yannisme/flarum-confix-theme"
+            },
+            "time": "2022-01-27T01:40:12+00:00"
         },
         {
             "name": "zerosonesfun/elint",

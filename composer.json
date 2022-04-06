@@ -23,6 +23,7 @@
     "require": {
         "acpl/mobile-tab": "*",
         "afrux/forum-stats-widget": "*",
+        "afrux/news-widget": "*",
         "askvortsov/flarum-auto-moderator": "*",
         "askvortsov/flarum-moderator-warnings": "^0.6.1",
         "clarkwinkelmann/flarum-ext-circle-groups": "^1.0",
@@ -53,6 +54,7 @@
         "flarum/suspend": "*",
         "flarum/tags": "*",
         "fof/byobu": "*",
+        "fof/follow-tags": "*",
         "fof/formatting": "*",
         "fof/links": "^1.0",
         "fof/masquerade": "^2.1",
@@ -78,6 +80,7 @@
         "nyu8/flarum-email-filter": "^1.0",
         "pipecraft/flarum-ext-id-slug": "^1.1",
         "the-turk/flarum-stickiest": "^2.0.1",
+        "yannisme/confixtheme": "^2.3",
         "zerosonesfun/elint": "^3.4",
         "zerosonesfun/flarum-up": "*"
     },
