@@ -33,6 +33,7 @@
         "ecnu-forum/flarum-ext-chinese-search-mariadb": "^0.1.0",
         "ecnu-im/fancybox": "@dev",
         "ecnu-im/flarum-link-preview": "@dev",
+        "ecnu-im/sticky-sidenav": "^1.0",
         "ecnu-im/topic-starter-label": "@dev",
         "extiverse/mercury": "*",
         "flarum-lang/chinese-simplified": "v1.1.1.1220",
@@ -76,11 +77,13 @@
         "league/flysystem-aws-s3-v3": "1.*",
         "malago/flarum-ext-fancybox": "^0.3.0",
         "michaelbelgium/flarum-discussion-views": "^7.1",
+        "nearata/flarum-ext-signup-confirm-password": "^3.0",
         "noriods/auto-more": "^1.0",
         "nyu8/flarum-email-filter": "^1.0",
         "pipecraft/flarum-ext-id-slug": "^1.1",
         "the-turk/flarum-stickiest": "^2.0.1",
-        "yannisme/confixtheme": "^2.3",
+        "yannisme/oxotheme": "^2.1",
+        "zerosonesfun/composer-preview": "^1.1",
         "zerosonesfun/elint": "^3.4",
         "zerosonesfun/flarum-up": "*"
     },
@@ -88,8 +91,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
-            "cweagans/composer-patches": true,
-            "easywechat-composer/easywechat-composer": true
+            "cweagans/composer-patches": true
         }
     },
     "repositories": [{
