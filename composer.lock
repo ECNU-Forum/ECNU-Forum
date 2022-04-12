@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eca0f51987d45cad9bbb1563c8479f99",
+    "content-hash": "6f8d8bbf0dce98ae9c6ad65bafe3234d",
     "packages": [
         {
             "name": "acpl/mobile-tab",
@@ -79,6 +79,60 @@
                 "source": "https://github.com/android-com-pl/mobile-tab"
             },
             "time": "2022-01-20T16:19:55+00:00"
+        },
+        {
+            "name": "afrux/flarum-theme-base",
+            "version": "v0.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afrux/flarum-theme-base.git",
+                "reference": "609bda3bc4fc5699f13f45ddb5e0cf7365e10571"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/afrux/flarum-theme-base/zipball/609bda3bc4fc5699f13f45ddb5e0cf7365e10571",
+                "reference": "609bda3bc4fc5699f13f45ddb5e0cf7365e10571",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "suggest": {
+                "sycho/flarum-advanced-extension-categories": "Allows different categorization for dashboard extensions."
+            },
+            "type": "flarum-library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Afrux\\ThemeBase\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sami Mazouz",
+                    "email": "ilyasmazouz@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Base package for shared code between Afrux themes",
+            "keywords": [
+                "base",
+                "flarum",
+                "themes"
+            ],
+            "support": {
+                "issues": "https://github.com/afrux/flarum-theme-base/issues",
+                "source": "https://github.com/afrux/flarum-theme-base/tree/v0.1.7"
+            },
+            "time": "2022-03-15T14:54:55+00:00"
         },
         {
             "name": "afrux/forum-stats-widget",
@@ -2277,6 +2331,79 @@
             "transport-options": {
                 "relative": true
             }
+        },
+        {
+            "name": "ecnu-im/asirem-admin",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ECNU-Forum/asirem-admin.git",
+                "reference": "a9807f4ab5cddc2e63a485683e288ded84656684"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ECNU-Forum/asirem-admin/zipball/a9807f4ab5cddc2e63a485683e288ded84656684",
+                "reference": "a9807f4ab5cddc2e63a485683e288ded84656684",
+                "shasum": ""
+            },
+            "require": {
+                "afrux/flarum-theme-base": "^0.1.0",
+                "flarum/core": "^1.0.0"
+            },
+            "require-dev": {
+                "afrux/flarum-theme-base": "0.1.x-dev",
+                "sycho/flarum-uikit": "0.1.x-dev"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                },
+                "flarum-extension": {
+                    "title": "Asirem Admin",
+                    "category": "theme",
+                    "optional-dependencies": [
+                        "flarum/tags",
+                        "flarum/approval",
+                        "sycho/flarum-advanced-extension-categories"
+                    ],
+                    "icon": {
+                        "image": "icon.svg"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Afrux\\Asirem\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sami Mazouz",
+                    "email": "ilyasmazouz@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The admin panel of afrux/asirem",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/27939",
+                "issues": "https://github.com/afrux/asirem/issues",
+                "source": "https://github.com/afrux/asirem"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/sycho",
+                    "type": "other"
+                }
+            ],
+            "time": "2022-04-11T21:48:07+00:00"
         },
         {
             "name": "ecnu-im/fancybox",
