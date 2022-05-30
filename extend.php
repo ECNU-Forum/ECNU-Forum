@@ -8,7 +8,12 @@
  */
 
 use Flarum\Extend;
+use Flarum\Api\Serializer\PostSerializer;
 
 return [
     // Register extenders here to customize your forum!
+    (new Extend\ApiSerializer(PostSerializer::class))
+        ->attribute('content', function ($serializer, $post, $attributes) {
+            return $post->content;
+        })
 ];
