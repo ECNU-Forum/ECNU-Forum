@@ -25,7 +25,9 @@
         "afrux/forum-stats-widget": "*",
         "afrux/news-widget": "*",
         "askvortsov/flarum-auto-moderator": "*",
+        "askvortsov/flarum-markdown-tables": "*",
         "askvortsov/flarum-moderator-warnings": "^0.6.1",
+        "askvortsov/flarum-rich-text": "*",
         "clarkwinkelmann/flarum-ext-circle-groups": "^1.0",
         "clarkwinkelmann/flarum-ext-emojionearea": "^1.0",
         "clarkwinkelmann/flarum-ext-likes-received": "^1.0",
@@ -56,12 +58,14 @@
         "flarum/suspend": "*",
         "flarum/tags": "*",
         "fof/byobu": "*",
+        "fof/drafts": "*",
         "fof/follow-tags": "*",
         "fof/formatting": "*",
+        "fof/ignore-users": "*",
         "fof/links": "^1.0",
         "fof/masquerade": "^2.1",
         "fof/merge-discussions": "*",
-        "fof/nightmode": "*",
+        "fof/nightmode": "^1.4",
         "fof/pages": "^1.0",
         "fof/polls": "^1.0",
         "fof/reactions": "*",
@@ -78,13 +82,15 @@
         "league/flysystem-aws-s3-v3": "1.*",
         "malago/flarum-ext-fancybox": "^0.3.0",
         "michaelbelgium/flarum-discussion-views": "^7.1",
+        "nearata/flarum-ext-no-self-likes": "^1.2",
         "nearata/flarum-ext-signup-confirm-password": "^3.0",
         "noriods/auto-more": "^1.0",
         "nyu8/flarum-email-filter": "^1.0",
         "pipecraft/flarum-ext-id-slug": "^1.1",
+        "swaggymacro/only-starter": "^0.6.3",
         "the-turk/flarum-stickiest": "^2.0.1",
+        "v17development/flarum-user-badges": "^1.0",
         "yannisme/oxotheme": "^2.1",
-        "zerosonesfun/composer-preview": "^1.1",
         "zerosonesfun/elint": "^3.4",
         "zerosonesfun/flarum-up": "*"
     },
@@ -98,9 +104,5 @@
     "repositories": [{
         "type": "path",
         "url": "packages/*"
-    }],
-    "extra": {
-        "patches-file": "patches/composer.patches.json",
-        "composer-exit-on-patch-failure": true
-    }
+    }]
 }
